@@ -22,13 +22,13 @@ items:
   children: []
   path: "/organizations"
   file: content/fr/organizations/_index.html
-- title: Connaissance du territoire
-  target: "/connaissance-du-territoire/"
+- title: Adaptation au changement climatique
+  target: "/adaptation-au-changement-climatique/"
   kind: page
   new_tab: false
   children: []
-  path: "/pages/connaissance-du-territoire"
-  file: content/fr/pages/connaissance-du-territoire/_index.html
+  path: "/pages/adaptation-au-changement-climatique"
+  file: content/fr/pages/adaptation-au-changement-climatique/_index.html
 - title: Évaluation de l'efficacité
   target: "/evaluation-de-lefficacite/"
   kind: page
