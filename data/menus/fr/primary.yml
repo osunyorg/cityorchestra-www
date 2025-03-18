@@ -43,4 +43,11 @@ items:
   children: []
   path: "/organizations"
   file: content/fr/organizations/_index.html
+- title: Gestion responsable du foncier
+  target: "/gestion-responsable-du-foncier/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/gestion-responsable-du-foncier"
+  file: content/fr/pages/gestion-responsable-du-foncier/_index.html
 
