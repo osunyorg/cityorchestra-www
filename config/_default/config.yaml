@@ -8,3 +8,10 @@ params:
   logo:
     header: '/assets/images/logo.svg'
     footer: '/assets/images/logo-white.svg'
+  menu:
+    primary:
+      level_2:
+        summary:
+          active: true
+          source: "Summary" # "Summary" | "meta_description"
+          truncate: 125
