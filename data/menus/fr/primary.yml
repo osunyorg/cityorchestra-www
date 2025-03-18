@@ -20,6 +20,13 @@ items:
     children: []
     path: "/pages/reponses-operationnelles/amelioration-de-la-qualite-de-l-air"
     file: content/fr/pages/reponses-operationnelles/amelioration-de-la-qualite-de-l-air/_index.html
+  - title: Efficacité énergétique
+    target: "/reponses-operationnelles/efficacite-energetique/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/reponses-operationnelles/efficacite-energetique"
+    file: content/fr/pages/reponses-operationnelles/efficacite-energetique/_index.html
   - title: Gestion responsable du foncier
     target: "/reponses-operationnelles/gestion-responsable-du-foncier/"
     kind: page
@@ -29,13 +36,6 @@ items:
     file: content/fr/pages/reponses-operationnelles/gestion-responsable-du-foncier/_index.html
   path: "/pages/reponses-operationnelles"
   file: content/fr/pages/reponses-operationnelles/_index.html
-- title: Efficacité énergétique
-  target: "/efficacite-energetique/"
-  kind: page
-  new_tab: false
-  children: []
-  path: "/pages/efficacite-energetique"
-  file: content/fr/pages/efficacite-energetique/_index.html
 - title: Actualités
   target: "/actualites/"
   kind: page
