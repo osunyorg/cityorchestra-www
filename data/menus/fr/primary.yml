@@ -1,20 +1,34 @@
 ---
 title: Menu principal
 items:
-- title: Adaptation au changement climatique
-  target: "/adaptation-au-changement-climatique/"
+- title: Réponses opérationnelles
+  target: "/reponses-operationnelles/"
   kind: page
   new_tab: false
-  children: []
-  path: "/pages/adaptation-au-changement-climatique"
-  file: content/fr/pages/adaptation-au-changement-climatique/_index.html
-- title: Amélioration de la qualité de l'air
-  target: "/amelioration-de-la-qualite-de-l-air/"
-  kind: page
-  new_tab: false
-  children: []
-  path: "/pages/amelioration-de-la-qualite-de-l-air"
-  file: content/fr/pages/amelioration-de-la-qualite-de-l-air/_index.html
+  children:
+  - title: Adaptation au changement climatique
+    target: "/reponses-operationnelles/adaptation-au-changement-climatique/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/reponses-operationnelles/adaptation-au-changement-climatique"
+    file: content/fr/pages/reponses-operationnelles/adaptation-au-changement-climatique/_index.html
+  - title: Amélioration de la qualité de l'air
+    target: "/reponses-operationnelles/amelioration-de-la-qualite-de-l-air/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/reponses-operationnelles/amelioration-de-la-qualite-de-l-air"
+    file: content/fr/pages/reponses-operationnelles/amelioration-de-la-qualite-de-l-air/_index.html
+  - title: Gestion responsable du foncier
+    target: "/reponses-operationnelles/gestion-responsable-du-foncier/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/reponses-operationnelles/gestion-responsable-du-foncier"
+    file: content/fr/pages/reponses-operationnelles/gestion-responsable-du-foncier/_index.html
+  path: "/pages/reponses-operationnelles"
+  file: content/fr/pages/reponses-operationnelles/_index.html
 - title: Efficacité énergétique
   target: "/efficacite-energetique/"
   kind: page
@@ -43,18 +57,4 @@ items:
   children: []
   path: "/organizations"
   file: content/fr/organizations/_index.html
-- title: Réponses opérationnelles
-  target: "/reponses-operationnelles/"
-  kind: page
-  new_tab: false
-  children:
-  - title: Gestion responsable du foncier
-    target: "/reponses-operationnelles/gestion-responsable-du-foncier/"
-    kind: page
-    new_tab: false
-    children: []
-    path: "/pages/reponses-operationnelles/gestion-responsable-du-foncier"
-    file: content/fr/pages/reponses-operationnelles/gestion-responsable-du-foncier/_index.html
-  path: "/pages/reponses-operationnelles"
-  file: content/fr/pages/reponses-operationnelles/_index.html
 
