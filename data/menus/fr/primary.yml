@@ -1,7 +1,7 @@
 ---
 title: Menu principal
 items:
-- title: Réponses opérationnelles
+- title: Des réponses opérationnelles
   target: "/reponses-operationnelles/"
   kind: page
   new_tab: false
