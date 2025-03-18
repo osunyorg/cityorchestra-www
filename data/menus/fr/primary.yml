@@ -36,4 +36,11 @@ items:
   children: []
   path: "/organizations"
   file: content/fr/organizations/_index.html
+- title: Efficacité énergétique
+  target: "/efficacite-energetique/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/efficacite-energetique"
+  file: content/fr/pages/efficacite-energetique/_index.html
 
