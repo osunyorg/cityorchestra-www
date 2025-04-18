@@ -8,7 +8,7 @@ items:
   children: []
   path: "/pages/projet"
   file: content/fr/pages/projet/_index.html
-- title: Pour la transition écologique
+- title: Au service de la transition écologique
   target: "/reponses-operationnelles/"
   kind: page
   new_tab: false
