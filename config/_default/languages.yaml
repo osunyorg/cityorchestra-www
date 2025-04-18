@@ -9,6 +9,12 @@ fr:
   buildFuture: true
   params:
     contact_details:
+      social_networks:
+        linkedin:
+          label: >-
+            cityorchestra
+          value: >-
+            https://www.linkedin.com/company/cityorchestra
 
   permalinks:
     events: /agenda/:year/:slug/
