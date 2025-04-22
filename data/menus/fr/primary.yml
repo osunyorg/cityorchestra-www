@@ -71,4 +71,11 @@ items:
   children: []
   path: "/posts"
   file: content/fr/posts/_index.html
+- title: Des données à orchestrer
+  target: "/projet/orchestration/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/projet/orchestration"
+  file: content/fr/pages/projet/orchestration/_index.html
 
