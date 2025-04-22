@@ -9,6 +9,12 @@ fr:
   buildFuture: true
   params:
     contact_details:
+      emails:
+        email:
+          label: >-
+            cityorchestra@rennesmetropole.fr
+          value: >-
+            mailto:cityorchestra@rennesmetropole.fr
       social_networks:
         linkedin:
           label: >-
