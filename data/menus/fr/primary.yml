@@ -27,6 +27,13 @@ items:
     children: []
     path: "/pages/projet/orchestration"
     file: content/fr/pages/projet/orchestration/_index.html
+  - title: Un enjeu de réplicabilité
+    target: "/projet/replicabilite/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/projet/replicabilite"
+    file: content/fr/pages/projet/replicabilite/_index.html
   path: "/pages/projet"
   file: content/fr/pages/projet/_index.html
 - title: Réponses opérationnelles
@@ -78,11 +85,4 @@ items:
   children: []
   path: "/posts"
   file: content/fr/posts/_index.html
-- title: Un enjeu de réplicabilité
-  target: "/projet/replicabilite/"
-  kind: page
-  new_tab: false
-  children: []
-  path: "/pages/projet/replicabilite"
-  file: content/fr/pages/projet/replicabilite/_index.html
 
