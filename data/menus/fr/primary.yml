@@ -78,6 +78,13 @@ items:
   children: []
   path: "/organizations"
   file: content/fr/organizations/_index.html
+- title: Soutien et réseau
+  target: "/soutien-et-reseau/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/soutien-et-reseau"
+  file: content/fr/pages/soutien-et-reseau/_index.html
 - title: Actualités
   target: "/actualites/"
   kind: page
