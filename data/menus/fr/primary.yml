@@ -13,13 +13,6 @@ items:
     children: []
     path: "/pages/projet/projet-1"
     file: content/fr/pages/projet/projet-1/_index.html
-  - title: Une gouvernance à construire
-    target: "/projet/gouvernance/"
-    kind: page
-    new_tab: false
-    children: []
-    path: "/pages/projet/gouvernance"
-    file: content/fr/pages/projet/gouvernance/_index.html
   - title: Des données à orchestrer
     target: "/projet/orchestration/"
     kind: page
@@ -27,6 +20,13 @@ items:
     children: []
     path: "/pages/projet/orchestration"
     file: content/fr/pages/projet/orchestration/_index.html
+  - title: Une gouvernance à construire
+    target: "/projet/gouvernance/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/projet/gouvernance"
+    file: content/fr/pages/projet/gouvernance/_index.html
   - title: Un enjeu de réplicabilité
     target: "/projet/replicabilite/"
     kind: page
