@@ -79,12 +79,12 @@ items:
   path: "/organizations"
   file: content/fr/organizations/_index.html
 - title: Réseau et soutien
-  target: "/reseau-soutien/"
+  target: "/reseau-et-soutien/"
   kind: page
   new_tab: false
   children: []
-  path: "/pages/reseau-soutien"
-  file: content/fr/pages/reseau-soutien/_index.html
+  path: "/pages/reseau-et-soutien"
+  file: content/fr/pages/reseau-et-soutien/_index.html
 - title: Actualités
   target: "/actualites/"
   kind: page
