@@ -78,7 +78,7 @@ items:
   children: []
   path: "/organizations"
   file: content/fr/organizations/_index.html
-- title: Soutien et réseau
+- title: Réseau et soutien
   target: "/soutien-et-reseau/"
   kind: page
   new_tab: false
