@@ -36,7 +36,7 @@ items:
     file: content/fr/pages/projet/replicabilite/_index.html
   path: "/pages/projet"
   file: content/fr/pages/projet/_index.html
-- title: Réponses opérationnelles
+- title: Cas d'usages
   target: "/reponses-operationnelles/"
   kind: page
   new_tab: false
