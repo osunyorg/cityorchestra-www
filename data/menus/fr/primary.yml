@@ -37,40 +37,40 @@ items:
   path: "/pages/projet"
   file: content/fr/pages/projet/_index.html
 - title: Cas d'usages
-  target: "/reponses-operationnelles/"
+  target: "/usages/"
   kind: page
   new_tab: false
   children:
   - title: Adaptation au changement climatique
-    target: "/reponses-operationnelles/adaptation-au-changement-climatique/"
+    target: "/usages/adaptation-au-changement-climatique/"
     kind: page
     new_tab: false
     children: []
-    path: "/pages/reponses-operationnelles/adaptation-au-changement-climatique"
-    file: content/fr/pages/reponses-operationnelles/adaptation-au-changement-climatique/_index.html
+    path: "/pages/usages/adaptation-au-changement-climatique"
+    file: content/fr/pages/usages/adaptation-au-changement-climatique/_index.html
   - title: Amélioration de la qualité de l'air
-    target: "/reponses-operationnelles/amelioration-de-la-qualite-de-l-air/"
+    target: "/usages/amelioration-de-la-qualite-de-l-air/"
     kind: page
     new_tab: false
     children: []
-    path: "/pages/reponses-operationnelles/amelioration-de-la-qualite-de-l-air"
-    file: content/fr/pages/reponses-operationnelles/amelioration-de-la-qualite-de-l-air/_index.html
+    path: "/pages/usages/amelioration-de-la-qualite-de-l-air"
+    file: content/fr/pages/usages/amelioration-de-la-qualite-de-l-air/_index.html
   - title: Efficacité énergétique
-    target: "/reponses-operationnelles/efficacite-energetique/"
+    target: "/usages/efficacite-energetique/"
     kind: page
     new_tab: false
     children: []
-    path: "/pages/reponses-operationnelles/efficacite-energetique"
-    file: content/fr/pages/reponses-operationnelles/efficacite-energetique/_index.html
+    path: "/pages/usages/efficacite-energetique"
+    file: content/fr/pages/usages/efficacite-energetique/_index.html
   - title: Gestion responsable du foncier
-    target: "/reponses-operationnelles/gestion-responsable-du-foncier/"
+    target: "/usages/gestion-responsable-du-foncier/"
     kind: page
     new_tab: false
     children: []
-    path: "/pages/reponses-operationnelles/gestion-responsable-du-foncier"
-    file: content/fr/pages/reponses-operationnelles/gestion-responsable-du-foncier/_index.html
-  path: "/pages/reponses-operationnelles"
-  file: content/fr/pages/reponses-operationnelles/_index.html
+    path: "/pages/usages/gestion-responsable-du-foncier"
+    file: content/fr/pages/usages/gestion-responsable-du-foncier/_index.html
+  path: "/pages/usages"
+  file: content/fr/pages/usages/_index.html
 - title: Partenaires
   target: "/partenaires/"
   kind: page
