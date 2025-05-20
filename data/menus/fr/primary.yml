@@ -42,19 +42,19 @@ items:
   new_tab: false
   children:
   - title: Adaptation au changement climatique
-    target: "/usages/adaptation-au-changement-climatique/"
+    target: "/usages/adaptation-changement-climatique/"
     kind: page
     new_tab: false
     children: []
-    path: "/pages/usages/adaptation-au-changement-climatique"
-    file: content/fr/pages/usages/adaptation-au-changement-climatique/_index.html
+    path: "/pages/usages/adaptation-changement-climatique"
+    file: content/fr/pages/usages/adaptation-changement-climatique/_index.html
   - title: Amélioration de la qualité de l'air
-    target: "/usages/amelioration-de-la-qualite-de-l-air/"
+    target: "/usages/amelioration-qualite-air/"
     kind: page
     new_tab: false
     children: []
-    path: "/pages/usages/amelioration-de-la-qualite-de-l-air"
-    file: content/fr/pages/usages/amelioration-de-la-qualite-de-l-air/_index.html
+    path: "/pages/usages/amelioration-qualite-air"
+    file: content/fr/pages/usages/amelioration-qualite-air/_index.html
   - title: Efficacité énergétique
     target: "/usages/efficacite-energetique/"
     kind: page
@@ -63,12 +63,12 @@ items:
     path: "/pages/usages/efficacite-energetique"
     file: content/fr/pages/usages/efficacite-energetique/_index.html
   - title: Gestion responsable du foncier
-    target: "/usages/gestion-responsable-du-foncier/"
+    target: "/usages/gestion-responsable-foncier/"
     kind: page
     new_tab: false
     children: []
-    path: "/pages/usages/gestion-responsable-du-foncier"
-    file: content/fr/pages/usages/gestion-responsable-du-foncier/_index.html
+    path: "/pages/usages/gestion-responsable-foncier"
+    file: content/fr/pages/usages/gestion-responsable-foncier/_index.html
   path: "/pages/usages"
   file: content/fr/pages/usages/_index.html
 - title: Partenaires
