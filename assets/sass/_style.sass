@@ -15,4 +15,43 @@
         .btn
             @extend .button--small
             border-top-left-radius: pxToRem(0)
+
+.block-key_figures
+    ul
+        li
+            text-align: center
+            display: flex
+            flex-direction: column
+
+            &:nth-child(3n-2)
+                span
+                    strong 
+                        color: $color-red
+
+            &:nth-child(3n-1)
+                span
+                    strong 
+                        color: $color-green
             
+            &:nth-child(3n)
+                span
+                    strong 
+                        color: $color-pink
+
+.block-key_figures
+    ul
+        li
+            span
+                margin-bottom: $spacing-2
+                font-weight: $bold
+                font-size: pxToRem(29)
+
+.block-key_figures
+    ul
+        li
+            span
+                strong
+                    display: block
+                    margin-bottom: $spacing-3
+                    
+
