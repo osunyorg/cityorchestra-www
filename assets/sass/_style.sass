@@ -47,6 +47,31 @@
         .content figure
             @include media-breakpoint-up(desktop)
                 width: columns(4)
+    .page__home &
+        hgroup 
+            display: flex
+            flex-direction: column
+            h1
+                margin-bottom: $spacing-3
+                order: -2
+            @include media-breakpoint-up(desktop)
+                width: columns(11)
+                h1
+                    width: columns(8)
+                p
+                    width: columns(9)
+                &::after
+                    content: ""
+                    order: -1
+                    height: 1px
+                    width: 100%
+                    background-color: $color-text
+            > p:first-of-type
+                margin-top: space(10)
+        .hero-actions
+            margin-top: space(10)
+        figure
+            margin-right: var(--grid-gutter-negative)
 
 .block-key_figures
     ul
