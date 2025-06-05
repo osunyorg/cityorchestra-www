@@ -48,7 +48,7 @@
             @include media-breakpoint-up(desktop)
                 width: columns(4)
     .page__home &
-        hgroup 
+        hgroup
             display: flex
             flex-direction: column
             h1
@@ -147,6 +147,11 @@
                 font-weight: $bold
                 line-height: $h5-line-height-desktop
 
+.page__home
+    &.full-width
+        .block-pages--grid
+            .grid
+                @include grid(4,desktop)
 
 
 .block-pages,
