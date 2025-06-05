@@ -21,7 +21,7 @@
     .organizations__section &
         .content figure
             @include media-breakpoint-up(desktop)
-                width: columns(4) 
+                width: columns(4)
 
 .block-key_figures
     ul
@@ -32,17 +32,17 @@
 
             &:nth-child(3n-2)
                 span
-                    strong 
+                    strong
                         color: $color-red
 
             &:nth-child(3n-1)
                 span
-                    strong 
+                    strong
                         color: $color-green
-            
+
             &:nth-child(3n)
                 span
-                    strong 
+                    strong
                         color: $color-pink
 
 .block-key_figures
@@ -65,21 +65,38 @@
     .block-content
         .page-title a
             text-decoration: none
-        .page-content 
+        .page-content
+            .page-title
+                font-size: $h3-size-desktop
+                font-weight: $regular
             .more
-                @extend .btn 
+                @extend .btn
                 @extend .button--small
                 border-top-left-radius: 0
         .page:hover
             .more
                 background-color: var(--btn-hover-background)
                 color: var(--btn-hover-color)
+        .media img
+            aspect-ratio: 16/9
 
-.block-pages, 
+.block-posts
+    .grid
+        .post-content
+            .post-title
+                font-size: $h5-size-desktop
+                font-weight: $bold
+                line-height: $h5-line-height-desktop
+
+
+
+
+
+
+.block-pages,
 .block-posts,
 .block-events,
 .block-projects
     .media img
-        aspect-ratio: 16/9
         border-radius: $components-border-radius
         border-top-left-radius: 0
