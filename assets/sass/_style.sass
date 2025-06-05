@@ -3,12 +3,27 @@
         .top
             .description p
                 @include body-text
+            
+
+.hero--with-image
+    .content
+        border-bottom: 1px solid var(--color-text)
+        // .hero-text
+        //     @include media-breakpoint-up(desktop)
+        //         width: columns(4)
+        figure
+            margin-bottom: space(20)
+            @include media-breakpoint-up(desktop)
+                width: columns(5)
+    margin-bottom: space(0)
+    padding-bottom: space(0)
 
 .hero
     .hero-actions
         .btn
             @extend .button--small
             border-top-left-radius: 0
+
     .pages__section &
         &.hero--image-landscape,
         &.hero--image-square
