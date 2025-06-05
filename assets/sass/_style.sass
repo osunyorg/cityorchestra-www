@@ -79,6 +79,7 @@
             text-align: center
             display: flex
             flex-direction: column
+            line-height: space(7)
 
             &:nth-child(3n-2)
                 span
@@ -152,6 +153,18 @@
         .block-pages--grid
             .grid
                 @include grid(4,desktop)
+                .page
+                    .page-title
+                        line-height: $h5-line-height-desktop
+                        font-size: $h5-size-desktop
+                        ::after
+                            display: none
+                    p
+                        margin-top: space(5)
+                        line-height: space(7)
+
+
+
 
 
 .block-pages,
