@@ -15,9 +15,34 @@
         .btn
             @extend .button--small
             border-top-left-radius: 0
-    // 8 colonnes pour l'image + affichage en flex column
     .pages__section &
-     // 4 colonnes pour l'image
+        &.hero--image-landscape,
+        &.hero--image-square
+            figure
+                @include media-breakpoint-down(desktop)
+                    margin-left: 0
+                    margin-right: 0
+        .content
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center
+            .hero-text
+                width: columns(10)
+                hgroup
+                    > p:first-of-type
+                        margin-top: space(9)
+            figure
+                margin-top: $spacing-3
+                @include media-breakpoint-up(desktop)
+                    width: columns(8)
+                img
+                    border-radius: $components-border-radius
+                    border-top-left-radius: 0
+
+
+
+
     .organizations__section &
         .content figure
             @include media-breakpoint-up(desktop)
@@ -63,6 +88,14 @@
 
 .block-pages--large
     .block-content
+        .page
+            // border-bottom-width: 1px
+            // border-bottom-color: var(--color-text)
+            // border-bottom-style: solid
+            border-bottom: 1px solid var(--color-text)
+            padding-bottom: $spacing-4
+            + .page
+                margin-top: $spacing-4
         .page-title a
             text-decoration: none
         .page-content
@@ -80,6 +113,7 @@
         .media img
             aspect-ratio: 16/9
 
+
 .block-posts
     .grid
         .post-content
@@ -87,9 +121,6 @@
                 font-size: $h5-size-desktop
                 font-weight: $bold
                 line-height: $h5-line-height-desktop
-
-
-
 
 
 
