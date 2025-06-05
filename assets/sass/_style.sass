@@ -128,16 +128,26 @@
             .page-title
                 font-size: $h3-size-desktop
                 font-weight: $regular
+            h1
+                @include media-breakpoint-up(desktop)
+                    width: columns(6)
+            p
+                line-height: space(7)
+                margin-top: space(4)
+
             .more
                 @extend .btn
                 @extend .button--small
                 border-top-left-radius: 0
+                margin-top: space(9)
         .page:hover
             .more
                 background-color: var(--btn-hover-background)
                 color: var(--btn-hover-color)
         .media img
-            aspect-ratio: 16/9
+            @include media-breakpoint-up(desktop)
+                width: columns(5)
+
 
 
 .block-posts
