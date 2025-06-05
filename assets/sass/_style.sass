@@ -14,7 +14,14 @@
     .hero-actions
         .btn
             @extend .button--small
-            border-top-left-radius: pxToRem(0)
+            border-top-left-radius: 0
+    // 8 colonnes pour l'image + affichage en flex column
+    .pages__section &
+     // 4 colonnes pour l'image
+    .organizations__section &
+        .content figure
+            @include media-breakpoint-up(desktop)
+                width: columns(4) 
 
 .block-key_figures
     ul
@@ -44,7 +51,6 @@
             span
                 margin-bottom: $spacing-2
                 font-weight: $bold
-                font-size: pxToRem(29)
 
 .block-key_figures
     ul
@@ -54,25 +60,26 @@
                     display: block
                     margin-bottom: $spacing-3
 
-.blocks
-    .block-pages--large
-        .block-content
-            .page-title a
-                text-decoration: none
 
+.block-pages--large
+    .block-content
+        .page-title a
+            text-decoration: none
+        .page-content 
+            .more
+                @extend .btn 
+                @extend .button--small
+                border-top-left-radius: 0
+        .page:hover
+            .more
+                background-color: var(--btn-hover-background)
+                color: var(--btn-hover-color)
 
-.blocks
-    .block-pages--large
-        .block-content
-            .page-content .more
-                    @extend .button--small
-                    border-top-left-radius: pxToRem(0)
-
-.blocks
-    .block-pages--large
-        .block-content
-            .media img
-                border-top-left-radius: pxToRem(0)
-                border-top-right-radius: pxToRem(50)
-                border-bottom-right-radius: pxToRem(50)
-                border-bottom-left-radius: pxToRem(50)
+.block-pages, 
+.block-posts,
+.block-events,
+.block-projects
+    .media img
+        aspect-ratio: 16/9
+        border-radius: $components-border-radius
+        border-top-left-radius: 0
