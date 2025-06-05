@@ -5,10 +5,18 @@
                 @include body-text
 
 
-//.hero
-    //.hero-actions
-        //.btn
-            //@extend .button--small
+.hero--with-image
+    .content
+        border-bottom: 1px solid var(--color-text)
+        // .hero-text
+        //     @include media-breakpoint-up(desktop)
+        //         width: columns(4)
+        figure
+            margin-bottom: space(20)
+            @include media-breakpoint-up(desktop)
+                width: columns(5)
+    margin-bottom: space(0)
+    padding-bottom: space(0)
 
 .hero
     margin-bottom: $spacing-3
@@ -19,7 +27,6 @@
 
     .posts__page &
         .content
-            .hero-text
             figure
                 img
                     border-radius: $components-border-radius
@@ -122,13 +129,9 @@
                     display: block
                     margin-bottom: $spacing-3
 
-
 .block-pages--large
     .block-content
         .page
-            // border-bottom-width: 1px
-            // border-bottom-color: var(--color-text)
-            // border-bottom-style: solid
             border-bottom: 1px solid var(--color-text)
             padding-bottom: $spacing-4
             @include in-page-without-sidebar
@@ -159,7 +162,6 @@
             .more
                 background-color: var(--btn-hover-background)
                 color: var(--btn-hover-color)
-
 
 .block-posts
     // .block-title h2
