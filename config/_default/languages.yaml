@@ -28,6 +28,9 @@ fr:
     posts_categories: /actualites/:slug/
     organizations: /partenaires/:slug/
     organizations_categories: /partenaires/categories/:slug/
+    persons: /equipe/:slug/
+    persons_categories: /equipe/categories/:slug/
+    authors: /equipe/:slug/actualites/
   taxonomies:
     administrator: administrators
     author: authors

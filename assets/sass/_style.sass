@@ -130,6 +130,18 @@
                 strong
                     display: block
                     margin-bottom: $spacing-3
+.block-image
+    &.image-landscape
+        img 
+            @include in-page-with-sidebar
+                max-height: none
+    .block-content
+        figure
+            picture
+                margin-right: 0
+
+            button
+                width: 100%
 
 .block-pages--large
     .block-content
@@ -199,7 +211,6 @@
         .siblings-navigation
             a
                 font-weight: $bold
-
 
 .blocks
     .block-title
