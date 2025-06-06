@@ -5,18 +5,6 @@
                 @include body-text
 
 
-.hero--with-image
-    .content
-        border-bottom: 1px solid var(--color-text)
-        // .hero-text
-        //     @include media-breakpoint-up(desktop)
-        //         width: columns(4)
-        figure
-            margin-bottom: space(20)
-            @include media-breakpoint-up(desktop)
-                width: columns(5)
-    margin-bottom: space(0)
-    padding-bottom: space(0)
 
 .hero
     margin-bottom: $spacing-3
@@ -35,12 +23,22 @@
                     object-fit: cover
 
     .pages__section &
-                figure
-                    @include media-breakpoint-up(desktop)
-                        width: columns(4)
-                .hero-text
-                    @include media-breakpoint-up(desktop)
-                        width: columns(7)
+        .content
+            border-bottom: 1px solid var(--color-text)
+            // .hero-text
+            //     @include media-breakpoint-up(desktop)
+            //         width: columns(4)
+            figure
+                margin-bottom: space(20)
+                @include media-breakpoint-up(desktop)
+                    width: columns(4)
+                margin-bottom: space(0)
+                padding-bottom: space(0)
+
+
+            .hero-text
+                @include media-breakpoint-up(desktop)
+                    width: columns(7)
 
 
 
@@ -80,6 +78,8 @@
                 @include media-breakpoint-up(desktop)
                     width: columns(4)
     .page__home &
+        .content
+            align-items: center
         hgroup
             display: flex
             flex-direction: column
@@ -89,7 +89,9 @@
             @include media-breakpoint-up(desktop)
                 width: columns(11)
                 h1
-                    width: columns(8)
+                    width: columns(10)
+                    @include media-breakpoint-up(xxl)
+                        width: columns(8)
                 p
                     width: columns(9)
                 &::after
