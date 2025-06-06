@@ -132,7 +132,7 @@
                     margin-bottom: $spacing-3
 .block-image
     &.image-landscape
-        img 
+        img
             @include in-page-with-sidebar
                 max-height: none
     .block-content
@@ -220,6 +220,9 @@
 .posts__section
     .posts--list
         article
+            border-bottom: none
+            .post-title
+                @include h4
             .media
                 @include media-breakpoint-up(desktop)
                     width: columns(4)
@@ -228,6 +231,10 @@
                     border-top-left-radius: 0
                     aspect-ratio: 1.54/1
                     object-fit: cover
+
+
+
+
 
 .block-pages,
 .block-posts,
