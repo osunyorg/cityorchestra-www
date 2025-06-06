@@ -35,6 +35,17 @@
                     object-fit: cover
 
     .pages__section &
+                figure
+                    @include media-breakpoint-up(desktop)
+                        width: columns(4)
+                .hero-text
+                    @include media-breakpoint-up(desktop)
+                        width: columns(7)
+
+
+
+
+    .ancestor-use-cases &
         &.hero--image-landscape,
         &.hero--image-square
             figure
@@ -233,7 +244,12 @@
                     object-fit: cover
 
 
-
+.pages__section
+    .block-pages
+        .block-content
+            .page
+                .page-title
+                        @include h5
 
 
 .block-pages,
