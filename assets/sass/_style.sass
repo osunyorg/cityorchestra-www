@@ -277,6 +277,26 @@
                 aspect-ratio: 1.54/1
                 object-fit: cover
 
+footer#document-footer
+    .footer-logos
+        font-size: $meta-size-desktop
+        line-height: $meta-line-height-desktop
+        font-weight: $meta-weight
+        color: $color-grey-pink
+        display: flex
+        gap: space(7)
+        padding-left: 200
+    .footer-logos-1-2
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        @include media-breakpoint-up(desktop)
+            width: columns(3)
+    .footer-logos-1
+        display: flex
+    .footer-logos-2
+        display: flex
+        justify-content: space-between
 
 .block-pages,
 .block-posts,
