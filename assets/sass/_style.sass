@@ -305,3 +305,41 @@ footer#document-footer
     .media img
         border-radius: $components-border-radius
         border-top-left-radius: 0
+
+// .block-testimonials
+//     .block-content
+//         .blockquote
+//             .testimonial
+//                 .is-long p
+//                         color: var(--color-text)
+// .block
+//     .block-testimonials
+//         .blockquote p
+//             color: var(--color-text)
+
+
+footer#document-footer
+  .container:last-of-type
+    display: flex
+    flex-direction: column
+    div.footer-social
+      order: -1
+      border-bottom: 1px solid var(--color-background)
+      padding-bottom: $spacing-3
+      width: 100%
+
+    .footer-legals
+      padding-top: space(5)
+      width: 100%
+      justify-content: space-between
+
+
+    .footer-social,
+    .footer-legals,
+    .nav-legal
+      display: flex
+      gap: space(10)
+
+      li,
+      .footer-credit
+        margin-top: 0
