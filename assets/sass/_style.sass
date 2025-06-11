@@ -284,16 +284,23 @@ footer#document-footer
         font-weight: $meta-weight
         color: $color-grey-pink
         display: flex
-        gap: space(7)
-        padding-left: 200
+        gap: space(4)
+        @include media-breakpoint-down(desktop)
+            flex-direction: column
+            gap: space(2)
     .footer-logos-1-2
         display: flex
         flex-direction: column
         justify-content: space-between
         @include media-breakpoint-up(desktop)
-            width: columns(3)
+            border-left: 1px solid var(--color-background)
+            padding-left: $spacing-3
+        @include media-breakpoint-down(desktop)
+            border-top: 1px solid var(--color-background)
     .footer-logos-1
         display: flex
+        @include media-breakpoint-down(desktop)
+            margin-top: space(6)
     .footer-logos-2
         display: flex
         justify-content: space-between
@@ -306,39 +313,39 @@ footer#document-footer
         border-radius: $components-border-radius
         border-top-left-radius: 0
 
-// .block-testimonials
-//     .block-content
-//         .blockquote
-//             .testimonial
-//                 .is-long p
-//                         color: var(--color-text)
-// .block
-//     .block-testimonials
-//         .blockquote p
-//             color: var(--color-text)
-
-
 footer#document-footer
   .container:last-of-type
     display: flex
     flex-direction: column
+    @include media-breakpoint-down(desktop)
+        margin-top: space(10)
+
     div.footer-social
       order: -1
       border-bottom: 1px solid var(--color-background)
-      padding-bottom: $spacing-3
       width: 100%
+      @include media-breakpoint-down(desktop)
+        padding-bottom: $spacing-3
+      @include media-breakpoint-up(desktop)
+        padding-bottom: $spacing-3
 
     .footer-legals
-      padding-top: space(5)
+      @include media-breakpoint-down(desktop)
+        padding-top: space(0)
+        margin-top: space(6)
+      @include media-breakpoint-up(desktop)
+        padding-top: space(5)
       width: 100%
       justify-content: space-between
-
 
     .footer-social,
     .footer-legals,
     .nav-legal
       display: flex
       gap: space(10)
+      @include media-breakpoint-down(desktop)
+        flex-direction: column
+        gap: space(6)
 
       li,
       .footer-credit
