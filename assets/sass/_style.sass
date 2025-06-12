@@ -211,6 +211,12 @@
             .post-meta
                 order: -1
 
+.block-image
+    img
+        border-radius: $components-border-radius
+        border-top-left-radius: 0
+        aspect-ratio: 1.54/1
+        object-fit: cover
 
 
 .page__home
@@ -266,15 +272,6 @@
             .page
                 .page-title
                         @include h5
-
-
-.organizations__section
-    .block-image
-        img
-            border-radius: $components-border-radius
-            border-top-left-radius: 0
-            aspect-ratio: 1.54/1
-            object-fit: cover
 
 footer#document-footer
     .footer-logos
