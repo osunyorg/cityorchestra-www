@@ -290,9 +290,13 @@
                 object-fit: cover
                 @include media-breakpoint-up(desktop)
                     width: columns(8)
+                @include media-breakpoint-down(desktop)
+                    margin-left: auto
+                    width: columns(12)
 
 
-  
+
+
 
 footer#document-footer
     .footer-logos
