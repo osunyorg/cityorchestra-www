@@ -36,17 +36,27 @@
             // .hero-text
             //     @include media-breakpoint-up(desktop)
             //         width: columns(4)
+            @include media-breakpoint-down(desktop)
+                display: flex
+                flex-direction: column
+                align-items: center
             figure
                 margin-bottom: space(20)
                 @include media-breakpoint-up(desktop)
                     width: columns(4)
                 margin-bottom: space(0)
                 padding-bottom: space(0)
-
+                @include media-breakpoint-down(desktop)
+                    width: columns(10)
 
             .hero-text
                 @include media-breakpoint-up(desktop)
                     width: columns(7)
+                @include media-breakpoint-down(desktop)
+                    text-align: left
+                    p
+                        font-size: $body-size-desktop
+
 
 
 
@@ -91,6 +101,14 @@
                     width: columns(4)
                 @include media-breakpoint-down(desktop)
                     width: columns(10)
+
+            .hero-text
+                @include media-breakpoint-down(desktop)
+                    p
+                        font-size: $body-size-desktop
+
+
+
     .page__home &
         .content
             align-items: center
