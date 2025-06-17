@@ -4,15 +4,12 @@
             .description p
                 @include body-text
 
-
-
 .hero
     margin-bottom: $spacing-3
     .hero-actions
         .btn
             @extend .button--small
             border-top-left-radius: 0
-
     .posts__page &
         .content
             figure
@@ -27,29 +24,19 @@
             border-bottom: 1px solid var(--color-text)
             padding-bottom: space(18)
 
-
-
     .pages__section &
         .content
             border-bottom: 1px solid var(--color-text)
             padding-bottom: space(19)
-            // .hero-text
-            //     @include media-breakpoint-up(desktop)
-            //         width: columns(4)
             figure
                 margin-bottom: space(20)
                 @include media-breakpoint-up(desktop)
                     width: columns(4)
                 margin-bottom: space(0)
                 padding-bottom: space(0)
-
-
             .hero-text
                 @include media-breakpoint-up(desktop)
                     width: columns(7)
-
-
-
 
     .ancestor-use-cases &
         &.hero--image-landscape,
@@ -94,18 +81,18 @@
     .page__home &
         .content
             align-items: center
+            @include media-breakpoint-down(desktop)
+                flex-direction: row
         hgroup
             display: flex
             flex-direction: column
             h1
                 margin-bottom: $spacing-3
                 order: -2
-            @include media-breakpoint-up(desktop)
-                width: columns(11)
-                h1
-                    width: columns(10)
-                    @include media-breakpoint-up(xxl)
-                        width: columns(8)
+                @include media-breakpoint-down(desktop)
+                    width: columns(9)
+                @include media-breakpoint-up(xxl)
+                    width: columns(8)
                 p
                     width: columns(9)
                 &::after
@@ -116,10 +103,19 @@
                     background-color: $color-text
             > p:first-of-type
                 margin-top: space(10)
+                @include media-breakpoint-down(desktop)
+                    margin-top: space(2)
+                    border-top: 1px solid var(--color-text)
+                    padding-top: space(9)
         .hero-actions
             margin-top: space(10)
         figure
             margin-right: var(--grid-gutter-negative)
+            @include media-breakpoint-down(desktop)
+                width: columns(4)
+                position: absolute
+                top: 20%
+                right: 5%
 
 .block-key_figures
     ul
