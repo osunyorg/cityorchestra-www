@@ -302,12 +302,27 @@
             margin-bottom: 0
             padding-bottom: space(5)
             min-height: 0
+
+
+
+
 .pages__section
     .block-pages
-        .block-content
+        &.block-class-alt-background
             .page
+                background-color: $color-grey
+                padding: $spacing-4
+                border-radius: $components-border-radius
+                border-top-left-radius: 0
+                p
+                    @include media-breakpoint-up(desktop)
+                        width: columns(7)
                 .page-title
-                        @include h5
+                    @include h5
+
+        &.block-pages--grid
+            .page-title
+                    @include h5
 
 
 .organizations__section
