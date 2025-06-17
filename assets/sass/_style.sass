@@ -416,3 +416,25 @@ footer#document-footer
       li,
       .footer-credit
         margin-top: 0
+
+.posts__section
+    .hero
+        .content
+                figure
+                    button
+                        img
+                            @include media-breakpoint-down(desktop)
+                                width: columns(12)
+                                margin-left: auto
+                                margin-right: auto
+    .document-content
+        .posts
+            .post
+                @include media-breakpoint-down(desktop)
+                    flex-direction: column
+                    .media
+                        width: fit-content
+                        margin-top: space(8)
+                        margin-bottom: space(8)
+                        order: -1
+
