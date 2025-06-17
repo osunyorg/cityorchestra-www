@@ -110,6 +110,7 @@
 
 
     .page__home &
+        .page-with-blocks
         .content
             align-items: center
             @include media-breakpoint-down(desktop)
@@ -140,7 +141,7 @@
                     padding-top: space(9)
         .hero-actions
             margin-top: space(10)
-        figure
+        .image-portrait
             margin-right: var(--grid-gutter-negative)
             @include media-breakpoint-down(desktop)
                 width: columns(4)
@@ -420,7 +421,7 @@ footer#document-footer
                                 width: columns(12)
                                 margin-left: auto
                                 margin-right: auto
-                                margin-bottom: space(50) 
+                                // margin-bottom: space(50) 
     .document-content
         .posts
             .post
