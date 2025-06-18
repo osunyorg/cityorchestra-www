@@ -177,7 +177,10 @@
             text-align: center
             display: flex
             flex-direction: column
-
+            span
+                strong
+                    @include media-breakpoint-down(desktop)
+                        font-size: 100px
             &:nth-child(3n-2)
                 span
                     strong
@@ -333,14 +336,10 @@
             .page-title
                 @include h5
 
-// Doesn't work yet
-//   .pages__section
-//     .block-pages
-//         .block-content
-//             .grid
-//                 .page
-//                     @include media-breakpoint-down(desktop)
-//                         margin-bottom: space(200)
+            .grid
+                .page
+                    @include media-breakpoint-down(desktop)
+                        margin-bottom: space(20)
 
 .organizations__section
     .block-content
