@@ -165,9 +165,11 @@
                 top: 20%
                 right: 5%
 .hero
-    .image-square
-        @include media-breakpoint-down(desktop)
-            margin-bottom: 0
+    .image-square,
+    .image-portrait
+        &:where(:not(.has-breadcrumb-hero-end))
+            @include media-breakpoint-down(desktop)
+                margin-bottom: 0
 
 .block-key_figures
     ul
