@@ -15,6 +15,21 @@
             .description p
                 @include body-text
 
+.blocks
+    .block-page-use-cases
+        .list
+            article
+                .page-title a
+                    @include h3
+                    text-decoration: none
+                .page-title a::after
+                    display: none
+                // @include .more-meta
+                .media
+                    img
+                        aspect-ratio: 4/3
+                        object-fit: cover
+
 .hero
     margin-bottom: $spacing-3
     .hero-actions
@@ -178,11 +193,6 @@
             span
                 margin-bottom: $spacing-2
                 font-weight: $bold
-
-.block-key_figures
-    ul
-        li
-            span
                 strong
                     display: block
                     margin-bottom: $spacing-3
@@ -257,13 +267,16 @@
             .grid
                 @include grid(4,desktop)
                 .page
+                    @include media-breakpoint-down(desktop)
+                        margin-top: space(12)
                     .page-title
                         @include h5
                         ::after
                             display: none
                     p
                         margin-top: space(5)
-
+                    &::after
+                        
 .block-siblings-navigation
     .block-content
         .siblings-navigation
