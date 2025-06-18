@@ -21,10 +21,9 @@
             article
                 .page-title a
                     @include h3
-                    text-decoration: none
-                .page-title a::after
-                    display: none
-                // @include .more-meta
+                //     text-decoration: none
+                // // .page-title a::after
+                // //     display: none > in waiting loop for PR
                 .media
                     img
                         aspect-ratio: 4/3
@@ -157,6 +156,7 @@
                     padding-top: space(9)
         .hero-actions
             margin-top: space(10)
+        figure
         .image-portrait
             margin-right: var(--grid-gutter-negative)
             @include media-breakpoint-down(desktop)
@@ -164,6 +164,10 @@
                 position: absolute
                 top: 20%
                 right: 5%
+.hero
+    .image-square
+        @include media-breakpoint-down(desktop)
+            margin-bottom: 0
 
 .block-key_figures
     ul
