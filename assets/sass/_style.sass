@@ -170,6 +170,12 @@
         &:where(:not(.has-breadcrumb-hero-end))
             @include media-breakpoint-down(desktop)
                 margin-bottom: 0
+.hero--image-landscape
+    .content
+        @include media-breakpoint-down(desktop)
+            margin-left: 0
+            margin-right: var(--grid-gutter)
+
 
 .block-key_figures
     ul
