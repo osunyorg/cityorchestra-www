@@ -1,0 +1,234 @@
+.block-pages--list
+    @include in-page-without-sidebar
+        .top
+            .description p
+                @include body-text
+
+.blocks
+    .block-page-use-cases
+        .list
+            article
+                .page-title a
+                    @include h3
+                .media
+                    img
+                        aspect-ratio: 4/3
+                        object-fit: cover
+
+.block-pages--large
+    .block-content
+        .page
+            border-bottom: 1px solid var(--color-text)
+            padding-bottom: $spacing-4
+            @include in-page-without-sidebar
+                align-items: flex-start
+            .media
+                @include in-page-without-sidebar
+                    width: columns(5)
+                img
+                    aspect-ratio: 1.54/1
+        .page-title a
+            @include h3
+            text-decoration: none
+        .page-content
+            .page-title
+                font-size: $h3-size-desktop
+                font-weight: $regular
+                @include media-breakpoint-up(desktop)
+                    width: columns(6)
+            p
+                margin-top: space(4)
+
+            .more
+                @extend .btn
+                @extend .button--small
+                border-top-left-radius: 0
+                margin-top: space(9)
+        .page:hover
+            .more
+                background-color: var(--btn-hover-background)
+                color: var(--btn-hover-color)
+
+.block-posts
+    .grid
+        .post-content
+            display: flex
+            flex-direction: column
+            .post-title
+                @include h5
+                order: -2
+            .post-meta
+                order: -1
+
+.block-image
+    .block-content
+        figure
+            picture
+                @include media-breakpoint-down(desktop)
+                    margin-left: 0
+                    margin-right: 0
+    img
+        border-radius: $components-border-radius
+        border-top-left-radius: 0
+        aspect-ratio: 1.54/1
+        object-fit: cover
+
+.block-key_figures
+    ul
+        li
+            text-align: center
+            display: flex
+            flex-direction: column
+            span
+                strong
+                    @include media-breakpoint-down(desktop)
+                        font-size: 100px
+            &:nth-child(3n-2)
+                span
+                    strong
+                        color: $color-red
+
+            &:nth-child(3n-1)
+                span
+                    strong
+                        color: $color-green
+
+            &:nth-child(3n)
+                span
+                    strong
+                        color: $color-pink
+
+.block-key_figures
+    ul
+        li
+            span
+                margin-bottom: $spacing-2
+                font-weight: $bold
+                strong
+                    display: block
+                    margin-bottom: $spacing-3
+.block-image
+    &.image-landscape
+        img
+            @include in-page-with-sidebar
+                max-height: none
+    .block-content
+        figure
+            picture
+                margin-right: 0
+
+            button
+                width: 100%
+
+
+
+.block-gallery--grid
+    .gallery
+        @include media-breakpoint-down(desktop)
+            display: flex
+            flex-direction: column
+            figure
+                img
+                    @include media-breakpoint-down(desktop)
+                        width: revert-layer
+
+
+.page__home
+    &.full-width
+        .block-pages--grid
+            .grid
+                @include grid(4,desktop)
+                article
+                    @include media-breakpoint-down(desktop)
+                        margin-top: space(12)
+                    .page-title
+                        @include h5
+                        a::after
+                            display: none
+                    p
+                        margin-top: space(5)
+                    .media
+                        margin-bottom: space(15)
+
+.block-siblings-navigation
+    .block-content
+        .siblings-navigation
+            a
+                font-weight: $bold
+
+.blocks
+    .block-title
+        h2
+            @include h4
+
+.block
+    .block-title
+        @include h4
+
+.pages__section
+    .block-pages
+        &.block-class-alt-background
+            .page
+                background-color: $color-grey
+                padding: $spacing-4
+                border-radius: $components-border-radius
+                border-top-left-radius: 0
+                p
+                    @include media-breakpoint-up(desktop)
+                        width: columns(7)
+                .page-title
+                    @include h5
+
+        &.block-pages--grid
+            .page-title
+                @include h5
+            .grid
+                @include grid(4,desktop)
+                .page
+                    @include media-breakpoint-down(desktop)
+                        margin-top: space(12)
+                    .page-title
+                        @include h5
+                        a::after
+                            display: none
+                    p
+                        margin-top: space(5)
+
+            .grid
+                .page
+                    @include media-breakpoint-down(desktop)
+                        margin-bottom: space(20)
+
+.block-posts--carousel
+    .post
+        @include media-breakpoint-down(desktop)
+            flex-direction: column
+            gap: $spacing-2
+        display: flex
+        flex-direction: row
+        gap: $spacing-5
+        .post-content
+            display: flex
+            flex-direction: column
+            .post-title
+                order: -2
+                @include media-breakpoint-up(desktop)
+                    width: columns(5)
+                a
+                    @include h5
+
+            .post-meta
+                order: -1
+        .media
+            overflow: unset
+            picture
+                @include media-breakpoint-up(desktop)
+                    width: columns(3)
+
+.block-pages,
+.block-posts,
+.block-events,
+.block-projects
+    .media img
+        border-radius: $components-border-radius
+        border-top-left-radius: 0
