@@ -11,103 +11,8 @@
                     margin-top: space(5)
                 @include media-breakpoint-down(desktop)
                     margin-top: space(3)
+
 .hero
-    margin-bottom: $spacing-3
-    .hero-actions
-        .btn
-            @extend .button--small
-            border-top-left-radius: 0
-    .posts__page &
-        .content
-            figure
-                img
-                    border-radius: $components-border-radius
-                    border-top-left-radius: 0
-                    aspect-ratio: 1.54/1
-                    object-fit: cover
-    .posts__section &
-        .content
-            border-bottom: 1px solid var(--color-text)
-            padding-bottom: space(18)
-    .pages__section &
-        .content
-            border-bottom: 1px solid var(--color-text)
-            padding-bottom: space(19)
-            @include media-breakpoint-down(desktop)
-                display: flex
-                flex-direction: column
-                align-items: center
-            figure
-                img
-                    margin-bottom: space(20)
-                    @include media-breakpoint-up(desktop)
-                        width: columns(4)
-                    margin-bottom: space(0)
-                    padding-bottom: space(0)
-                    @include media-breakpoint-up(desktop)
-                        width: columns(10)
-
-            .hero-text
-                @include media-breakpoint-up(desktop)
-                    width: columns(7)
-                @include media-breakpoint-down(desktop)
-                    text-align: left
-                    p
-                        font-size: $body-size-desktop
-
-    .ancestor-use-cases &
-        &.hero--image-landscape,
-        &.hero--image-square
-            figure
-                @include media-breakpoint-down(desktop)
-                    margin-left: 0
-                    margin-right: 0
-        .content
-            display: flex
-            flex-direction: column
-            align-items: center
-            text-align: center
-            border-bottom: 1px solid var(--color-text)
-            padding-bottom: space(18)
-            .hero-text
-                @include media-breakpoint-up(desktop)
-                    width: columns(10)
-                hgroup
-                    h1
-                        margin-left: auto
-                        margin-right: auto
-                        @include media-breakpoint-up(desktop)
-                            width: columns(8)
-                    > p:first-of-type
-                        margin-top: space(9)
-            figure
-                margin-top: $spacing-3
-                @include media-breakpoint-up(desktop)
-                    width: columns(8)
-                img
-                    border-radius: $components-border-radius
-                    border-top-left-radius: 0
-
-    .organizations__section &
-        .content
-            border-bottom: 1px solid var(--color-text)
-            padding-bottom: space(18)
-            @include media-breakpoint-down(desktop)
-                display: flex
-                flex-direction: column
-                align-items: center
-                padding-bottom: space(3)
-            figure
-                @include media-breakpoint-up(desktop)
-                    width: columns(4)
-                @include media-breakpoint-down(desktop)
-                    width: columns(8)
-                    order: -1
-            .hero-text
-                @include media-breakpoint-down(desktop)
-                    margin-top: space(10)
-                    p
-                        font-size: $body-size-desktop
     .page__home &
         .page-with-blocks
         .content
@@ -165,44 +70,12 @@
                 margin-left: 0
                 margin-right: 0
 
-.posts__section
-    .posts--list
-        article
-            border-bottom: none
-            .post-title
-                @include h4
-            .media
-                @include media-breakpoint-up(desktop)
-                    width: columns(4)
-                img
-                    border-radius: $components-border-radius
-                    border-top-left-radius: 0
-                    aspect-ratio: 1.54/1
-                    object-fit: cover
-
 .organizations__page
     .page-with-blocks
         .hero
             margin-bottom: 0
             padding-bottom: space(5)
             min-height: 0
-
-
-
-
-.organizations__section
-    .block-content
-        figure
-            img
-                border-radius: $components-border-radius
-                border-top-left-radius: 0
-                aspect-ratio: 1.54/1
-                object-fit: cover
-                @include media-breakpoint-up(desktop)
-                    width: columns(8)
-                @include media-breakpoint-down(desktop)
-                    margin-left: auto
-                    width: columns(12)
 
 footer#document-footer
     .footer-logos
@@ -271,27 +144,6 @@ footer#document-footer
         .footer-credit
             margin-top: 0
 
-.posts__section
-    .hero
-        .content
-                figure
-                    button
-                        img
-                            @include media-breakpoint-down(desktop)
-                                width: columns(12)
-                                margin-left: auto
-                                margin-right: auto
-                                // margin-bottom: space(50)
-    .document-content
-        .posts
-            .post
-                @include media-breakpoint-down(desktop)
-                    flex-direction: column
-                    .media
-                        width: fit-content
-                        margin-top: space(8)
-                        margin-bottom: space(8)
-                        order: -1
 
 // Comment améliorer le slider qu'il soit beau en mobile ?
 // .block-gallery--carousel

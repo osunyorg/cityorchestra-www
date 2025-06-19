@@ -225,6 +225,20 @@
                 @include media-breakpoint-up(desktop)
                     width: columns(3)
 
+.organizations__section
+    .block-content
+        figure
+            img
+                border-radius: $components-border-radius
+                border-top-left-radius: 0
+                aspect-ratio: 1.54/1
+                object-fit: cover
+                @include media-breakpoint-up(desktop)
+                    width: columns(8)
+                @include media-breakpoint-down(desktop)
+                    margin-left: auto
+                    width: columns(12)
+
 .block-pages,
 .block-posts,
 .block-events,
