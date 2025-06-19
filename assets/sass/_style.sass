@@ -290,7 +290,7 @@
         .block-pages--grid
             .grid
                 @include grid(4,desktop)
-                .page
+                article
                     @include media-breakpoint-down(desktop)
                         margin-top: space(12)
                     .page-title
@@ -299,6 +299,8 @@
                             display: none
                     p
                         margin-top: space(5)
+                    .media
+                        margin-bottom: space(15)
 
 .block-siblings-navigation
     .block-content
