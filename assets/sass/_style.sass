@@ -144,14 +144,18 @@
                     width: columns(9)
                 @include media-breakpoint-up(xxl)
                     width: columns(8)
-                p
-                    width: columns(9)
                 &::after
+                    margin-top: $spacing-3
+                    display: flex
                     content: ""
                     order: -1
                     height: 1px
-                    width: 100%
+                    width: columns(10)
                     background-color: $color-text
+                    @include media-breakpoint-down(desktop)
+                        display: none
+                p
+                    width: columns(9)
             > p:first-of-type
                 margin-top: space(10)
                 @include media-breakpoint-down(desktop)
