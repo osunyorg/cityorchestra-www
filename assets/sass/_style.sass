@@ -1,13 +1,15 @@
 #document-header
     nav
         .container
-            @include media-breakpoint-down(desktop)
-                &::after
-                    content: ""
-                    order: 0
-                    background-color: $color-text
-                    height: 1px
-                    width: 100%
+            &::after
+                content: ""
+                order: 0
+                background-color: $color-text
+                height: 1px
+                width: 100%
+                @include media-breakpoint-up(desktop)
+                    margin-top: space(5)
+                @include media-breakpoint-down(desktop)
                     margin-top: space(3)
 .block-pages--list
     @include in-page-without-sidebar
@@ -287,8 +289,8 @@
                         margin-top: space(12)
                     .page-title
                         @include h5
-                        // ::after > actuellement en PR
-                        //     display: none
+                        a::after
+                            display: none
                     p
                         margin-top: space(5)
                         
@@ -342,6 +344,17 @@
         &.block-pages--grid
             .page-title
                 @include h5
+            .grid
+                @include grid(4,desktop)
+                .page
+                    @include media-breakpoint-down(desktop)
+                        margin-top: space(12)
+                    .page-title
+                        @include h5
+                        a::after
+                            display: none
+                    p
+                        margin-top: space(5)
 
             .grid
                 .page
