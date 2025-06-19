@@ -172,9 +172,10 @@
                 margin-bottom: 0
 .hero--image-landscape
     .content
-        @include media-breakpoint-down(desktop)
-            margin-left: 0
-            margin-right: var(--grid-gutter)
+        figure
+            @include media-breakpoint-down(desktop)
+                margin-left: 0
+                margin-right: 0
 
 
 .block-key_figures
@@ -456,3 +457,12 @@ footer#document-footer
                         margin-top: space(8)
                         margin-bottom: space(8)
                         order: -1
+
+// Comment améliorer le slider qu'il soit beau en mobile ?
+// .block-gallery--carousel
+//     .slider
+//         figure
+//             picture
+//                 img
+//                     max-width: 300px
+//                     object-fit: cover
