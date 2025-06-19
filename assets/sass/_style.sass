@@ -379,6 +379,31 @@
                     @include media-breakpoint-down(desktop)
                         margin-bottom: space(20)
 
+.block-posts--carousel
+    .post
+        display: flex
+        flex-direction: row
+        gap: $spacing-5
+        .post-content
+            display: flex
+            flex-direction: column
+            .post-title
+                order: -2
+                @include media-breakpoint-up(desktop)
+                    width: columns(5)
+                a
+                    @include h5
+
+            .post-meta
+                order: -1
+        .media
+            overflow: unset
+            picture
+                @include media-breakpoint-up(desktop)
+                    width: columns(3)
+
+
+
 .organizations__section
     .block-content
         figure
@@ -430,42 +455,42 @@ footer#document-footer
         border-top-left-radius: 0
 
 footer#document-footer
-  .container:last-of-type
+    .container:last-of-type
     display: flex
     flex-direction: column
     @include media-breakpoint-down(desktop)
         margin-top: space(10)
 
     div.footer-social
-      order: -1
-      border-bottom: 1px solid var(--color-background)
-      width: 100%
-      @include media-breakpoint-down(desktop)
-        padding-bottom: $spacing-3
-      @include media-breakpoint-up(desktop)
-        padding-bottom: $spacing-3
+        order: -1
+        border-bottom: 1px solid var(--color-background)
+        width: 100%
+        @include media-breakpoint-down(desktop)
+            padding-bottom: $spacing-3
+        @include media-breakpoint-up(desktop)
+            padding-bottom: $spacing-3
 
     .footer-legals
-      @include media-breakpoint-down(desktop)
-        padding-top: space(0)
-        margin-top: space(6)
-      @include media-breakpoint-up(desktop)
-        padding-top: space(5)
-      width: 100%
-      justify-content: space-between
+        @include media-breakpoint-down(desktop)
+            padding-top: space(0)
+            margin-top: space(6)
+        @include media-breakpoint-up(desktop)
+            padding-top: space(5)
+        width: 100%
+        justify-content: space-between
 
     .footer-social,
     .footer-legals,
     .nav-legal
-      display: flex
-      gap: space(10)
-      @include media-breakpoint-down(desktop)
-        flex-direction: column
-        gap: space(6)
+        display: flex
+        gap: space(10)
+        @include media-breakpoint-down(desktop)
+            flex-direction: column
+            gap: space(6)
 
-      li,
-      .footer-credit
-        margin-top: 0
+        li,
+        .footer-credit
+            margin-top: 0
 
 .posts__section
     .hero
