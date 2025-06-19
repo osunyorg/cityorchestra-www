@@ -31,6 +31,7 @@
                         aspect-ratio: 4/3
                         object-fit: cover
 
+
 .hero
     margin-bottom: $spacing-3
     .hero-actions
@@ -113,17 +114,18 @@
                 display: flex
                 flex-direction: column
                 align-items: center
+                padding-bottom: space(3)
             figure
                 @include media-breakpoint-up(desktop)
                     width: columns(4)
                 @include media-breakpoint-down(desktop)
-                    width: columns(10)
-
+                    width: columns(8)
+                    order: -1
             .hero-text
                 @include media-breakpoint-down(desktop)
+                    margin-top: space(10)
                     p
                         font-size: $body-size-desktop
-
 
 
     .page__home &
