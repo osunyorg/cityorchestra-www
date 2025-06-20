@@ -97,7 +97,7 @@
                 span
                     strong
                         color: $color-pink
-
+// TODO : merge les duplications de selecteurs
 .block-key_figures
     ul
         li
@@ -107,6 +107,8 @@
                 strong
                     display: block
                     margin-bottom: $spacing-3
+
+// TODO : merge les duplications de selecteurs
 .block-image
     &.image-landscape
         img
@@ -132,7 +134,7 @@
                     @include media-breakpoint-down(desktop)
                         width: revert-layer
 
-
+// Ici ça va dans section
 .page__home
     &.full-width
         .block-pages--grid
@@ -160,11 +162,12 @@
     .block-title
         h2
             @include h4
-
+// à vérifier
 .block
     .block-title
         @include h4
 
+// section
 .pages__section
     .block-pages
         &.block-class-alt-background
@@ -225,11 +228,12 @@
                 @include media-breakpoint-up(desktop)
                     width: columns(3)
 
+// section
 .organizations__section
     .block-content
         figure
             img
-                border-radius: $components-border-radius
+                border-radius: $components-border-radius // créer un mixin qui permet de donner le mask à une image
                 border-top-left-radius: 0
                 aspect-ratio: 1.54/1
                 object-fit: cover
@@ -246,3 +250,4 @@
     .media img
         border-radius: $components-border-radius
         border-top-left-radius: 0
+
