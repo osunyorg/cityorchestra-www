@@ -1,9 +1,3 @@
-.block-pages--list
-    @include in-page-without-sidebar
-        .top
-            .description p
-                @include body-text
-
 .blocks
     .block-title
         h2
@@ -18,39 +12,45 @@
                         aspect-ratio: 4/3
                         object-fit: cover
 
-.block-pages--large
-    .block-content
-        .page
-            border-bottom: 1px solid var(--color-text)
-            padding-bottom: $spacing-4
-            @include in-page-without-sidebar
-                align-items: flex-start
-            .media
+.block-pages
+    &--list
+        @include in-page-without-sidebar
+            .top
+                .description p
+                    @include body-text
+    &--large
+        .block-content
+            .page
+                border-bottom: 1px solid var(--color-text)
+                padding-bottom: $spacing-4
                 @include in-page-without-sidebar
-                    width: columns(5)
-                img
-                    aspect-ratio: 1.54/1
-        .page-title a
-            @include h3
-            text-decoration: none
-        .page-content
-            .page-title
-                font-size: $h3-size-desktop
-                font-weight: $regular
-                @include media-breakpoint-up(desktop)
-                    width: columns(6)
-            p
-                margin-top: space(4)
+                    align-items: flex-start
+                .media
+                    @include in-page-without-sidebar
+                        width: columns(5)
+                    img
+                        aspect-ratio: 1.54/1
+            .page-title a
+                @include h3
+                text-decoration: none
+            .page-content
+                .page-title
+                    font-size: $h3-size-desktop
+                    font-weight: $regular
+                    @include media-breakpoint-up(desktop)
+                        width: columns(6)
+                p
+                    margin-top: space(4)
 
-            .more
-                @extend .btn
-                @extend .button--small
-                border-top-left-radius: 0
-                margin-top: space(9)
-        .page:hover
-            .more
-                background-color: var(--btn-hover-background)
-                color: var(--btn-hover-color)
+                .more
+                    @extend .btn
+                    @extend .button--small
+                    border-top-left-radius: 0
+                    margin-top: space(9)
+            .page:hover
+                .more
+                    background-color: var(--btn-hover-background)
+                    color: var(--btn-hover-color)
 
 .block-posts
     .grid
@@ -62,6 +62,18 @@
                 order: -2
             .post-meta
                 order: -1
+
+.block-organizations--grid
+    .block-content
+        .organization
+            .organization-content
+                text-align: center
+            .media
+                border-radius: 200px
+                padding: space(13)
+                margin-bottom: space(5)
+                    
+
 
 .block-key_figures
     ul
@@ -81,12 +93,10 @@
                 span
                     strong
                         color: $color-red
-
             &:nth-child(3n-1)
                 span
                     strong
                         color: $color-green
-
             &:nth-child(3n)
                 span
                     strong
@@ -110,9 +120,6 @@
             @include in-page-with-sidebar
                 max-height: none
 
-
-
-
 .block-gallery--grid
     .gallery
         @include media-breakpoint-down(desktop)
@@ -129,16 +136,9 @@
             a
                 font-weight: $bold
 
-// déplacer pour mixer temporairement avant vérification
-// .blocks
-//     .block-title
-//         h2
-//             @include h4
-// à vérifier
 .block
     .block-title
         @include h4
-
 
 .block-posts--carousel
     .post
@@ -157,7 +157,6 @@
                     width: columns(5)
                 a
                     @include h5
-
             .post-meta
                 order: -1
         .media
@@ -165,8 +164,6 @@
             picture
                 @include media-breakpoint-up(desktop)
                     width: columns(3)
-
-
 
 .block-pages,
 .block-posts,

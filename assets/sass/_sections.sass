@@ -1,20 +1,13 @@
-.hero
-    margin-bottom: $spacing-3
-    .hero-actions
-        .btn
-            @extend .button--small
-            border-top-left-radius: 0
-    .posts__page &
+.posts__page
+    .hero
         .content
             figure
                 img
                     @include style-image
                     aspect-ratio: 1.54/1
-    .posts__section &
-        .content
-            border-bottom: 1px solid var(--color-text)
-            padding-bottom: space(18)
-    .pages__section &
+
+.pages__section
+    .hero
         .content
             border-bottom: 1px solid var(--color-text)
             padding-bottom: space(19)
@@ -171,17 +164,14 @@
                 .page
                     @include media-breakpoint-down(desktop)
                         margin-top: space(12)
+                        margin-bottom: space(20)
+
                     .page-title
                         @include h5
                         a::after
                             display: none
                     p
                         margin-top: space(5)
-
-            .grid
-                .page
-                    @include media-breakpoint-down(desktop)
-                        margin-bottom: space(20)
 
 .organizations__section
     .block-content

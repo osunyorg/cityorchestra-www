@@ -6,13 +6,18 @@
                 order: 0
                 background-color: $color-text
                 height: 1px
-                width: 100%
+                width: columns(12)
                 @include media-breakpoint-up(desktop)
                     margin-top: space(5)
                 @include media-breakpoint-down(desktop)
                     margin-top: space(3)
 
 .hero
+    margin-bottom: $spacing-3
+    .hero-actions
+        .btn
+            @extend .button--small
+            border-top-left-radius: 0
     .page__home &
         .page-with-blocks
         .content
@@ -35,7 +40,7 @@
                     content: ""
                     order: -1
                     height: 1px
-                    width: columns(10)
+                    width: columns(12)
                     background-color: $color-text
                     @include media-breakpoint-down(desktop)
                         display: none
@@ -58,21 +63,17 @@
                 top: 20%
                 right: 0%
                 margin-right: 0
-
     .image-square,
     .image-portrait
         &:where(:not(.has-breadcrumb-hero-end))
             @include media-breakpoint-down(desktop)
                 margin-bottom: 0
-
 .hero--image-landscape
     .content
         figure
             @include media-breakpoint-down(desktop)
                 margin-left: 0
                 margin-right: 0
-
-
 
 footer#document-footer
     .footer-logos
