@@ -1,10 +1,7 @@
-.block-pages--list
-    @include in-page-without-sidebar
-        .top
-            .description p
-                @include body-text
-
 .blocks
+    .block-title
+        h2
+            @include h4
     .block-page-use-cases
         .list
             article
@@ -15,39 +12,45 @@
                         aspect-ratio: 4/3
                         object-fit: cover
 
-.block-pages--large
-    .block-content
-        .page
-            border-bottom: 1px solid var(--color-text)
-            padding-bottom: $spacing-4
-            @include in-page-without-sidebar
-                align-items: flex-start
-            .media
+.block-pages
+    &--list
+        @include in-page-without-sidebar
+            .top
+                .description p
+                    @include body-text
+    &--large
+        .block-content
+            .page
+                border-bottom: 1px solid var(--color-text)
+                padding-bottom: $spacing-4
                 @include in-page-without-sidebar
-                    width: columns(5)
-                img
-                    aspect-ratio: 1.54/1
-        .page-title a
-            @include h3
-            text-decoration: none
-        .page-content
-            .page-title
-                font-size: $h3-size-desktop
-                font-weight: $regular
-                @include media-breakpoint-up(desktop)
-                    width: columns(6)
-            p
-                margin-top: space(4)
+                    align-items: flex-start
+                .media
+                    @include in-page-without-sidebar
+                        width: columns(5)
+                    img
+                        aspect-ratio: 1.54/1
+            .page-title a
+                @include h3
+                text-decoration: none
+            .page-content
+                .page-title
+                    font-size: $h3-size-desktop
+                    font-weight: $regular
+                    @include media-breakpoint-up(desktop)
+                        width: columns(6)
+                p
+                    margin-top: space(4)
 
-            .more
-                @extend .btn
-                @extend .button--small
-                border-top-left-radius: 0
-                margin-top: space(9)
-        .page:hover
-            .more
-                background-color: var(--btn-hover-background)
-                color: var(--btn-hover-color)
+                .more
+                    @extend .btn
+                    @extend .button--small
+                    border-top-left-radius: 0
+                    margin-top: space(9)
+            .page:hover
+                .more
+                    background-color: var(--btn-hover-background)
+                    color: var(--btn-hover-color)
 
 .block-posts
     .grid
@@ -60,18 +63,17 @@
             .post-meta
                 order: -1
 
-.block-image
+.block-organizations--grid
     .block-content
-        figure
-            picture
-                @include media-breakpoint-down(desktop)
-                    margin-left: 0
-                    margin-right: 0
-    img
-        border-radius: $components-border-radius
-        border-top-left-radius: 0
-        aspect-ratio: 1.54/1
-        object-fit: cover
+        .organization
+            .organization-content
+                text-align: center
+            .media
+                border-radius: 200px
+                padding: space(13)
+                margin-bottom: space(5)
+                    
+
 
 .block-key_figures
     ul
@@ -80,49 +82,43 @@
             display: flex
             flex-direction: column
             span
+                margin-bottom: $spacing-2
+                font-weight: $bold
                 strong
+                    display: block
+                    margin-bottom: $spacing-3
                     @include media-breakpoint-down(desktop)
                         font-size: 100px
             &:nth-child(3n-2)
                 span
                     strong
                         color: $color-red
-
             &:nth-child(3n-1)
                 span
                     strong
                         color: $color-green
-
             &:nth-child(3n)
                 span
                     strong
                         color: $color-pink
-// TODO : merge les duplications de selecteurs
-.block-key_figures
-    ul
-        li
-            span
-                margin-bottom: $spacing-2
-                font-weight: $bold
-                strong
-                    display: block
-                    margin-bottom: $spacing-3
 
-// TODO : merge les duplications de selecteurs
 .block-image
-    &.image-landscape
-        img
-            @include in-page-with-sidebar
-                max-height: none
     .block-content
         figure
             picture
                 margin-right: 0
-
+                @include media-breakpoint-down(desktop)
+                    margin-left: 0
+                    margin-right: 0
             button
                 width: 100%
-
-
+    img
+        @include style-image
+        aspect-ratio: 1.54/1
+    &.image-landscape
+        img
+            @include in-page-with-sidebar
+                max-height: none
 
 .block-gallery--grid
     .gallery
@@ -134,73 +130,15 @@
                     @include media-breakpoint-down(desktop)
                         width: revert-layer
 
-// Ici ça va dans section
-.page__home
-    &.full-width
-        .block-pages--grid
-            .grid
-                @include grid(4,desktop)
-                article
-                    @include media-breakpoint-down(desktop)
-                        margin-top: space(12)
-                    .page-title
-                        @include h5
-                        a::after
-                            display: none
-                    p
-                        margin-top: space(5)
-                    .media
-                        margin-bottom: space(15)
-
 .block-siblings-navigation
     .block-content
         .siblings-navigation
             a
                 font-weight: $bold
 
-.blocks
-    .block-title
-        h2
-            @include h4
-// à vérifier
 .block
     .block-title
         @include h4
-
-// section
-.pages__section
-    .block-pages
-        &.block-class-alt-background
-            .page
-                background-color: $color-grey
-                padding: $spacing-4
-                border-radius: $components-border-radius
-                border-top-left-radius: 0
-                p
-                    @include media-breakpoint-up(desktop)
-                        width: columns(7)
-                .page-title
-                    @include h5
-
-        &.block-pages--grid
-            .page-title
-                @include h5
-            .grid
-                @include grid(4,desktop)
-                .page
-                    @include media-breakpoint-down(desktop)
-                        margin-top: space(12)
-                    .page-title
-                        @include h5
-                        a::after
-                            display: none
-                    p
-                        margin-top: space(5)
-
-            .grid
-                .page
-                    @include media-breakpoint-down(desktop)
-                        margin-bottom: space(20)
 
 .block-posts--carousel
     .post
@@ -219,7 +157,6 @@
                     width: columns(5)
                 a
                     @include h5
-
             .post-meta
                 order: -1
         .media
@@ -228,26 +165,9 @@
                 @include media-breakpoint-up(desktop)
                     width: columns(3)
 
-// section
-.organizations__section
-    .block-content
-        figure
-            img
-                border-radius: $components-border-radius // créer un mixin qui permet de donner le mask à une image
-                border-top-left-radius: 0
-                aspect-ratio: 1.54/1
-                object-fit: cover
-                @include media-breakpoint-up(desktop)
-                    width: columns(8)
-                @include media-breakpoint-down(desktop)
-                    margin-left: auto
-                    width: columns(12)
-
 .block-pages,
 .block-posts,
 .block-events,
 .block-projects
     .media img
-        border-radius: $components-border-radius
-        border-top-left-radius: 0
-
+        @include style-image
