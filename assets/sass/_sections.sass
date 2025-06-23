@@ -93,7 +93,7 @@
 .posts__section
     .posts--list
         article
-            padding-bottom: 0px
+            padding-bottom: 0px // try to create less space between the different posts, but it isn't working
             margin-bottom: $spacing-4
             border-bottom: none
             .post-title
@@ -128,10 +128,6 @@
                         margin-top: space(8)
                         margin-bottom: space(8)
                         order: -1
-                .post-categories
-                    li
-                        a
-                            text-decoration: none
 
 .organizations__page
     .page-with-blocks
@@ -163,6 +159,13 @@
                                 border-radius: 0
 
 .pages__section
+    .block-organizations--grid
+        .block-content
+            .grid
+                .organization
+                    .media--logo
+                        border-radius: 200px
+
     .block-pages
         &.block-class-alt-background
             .page
