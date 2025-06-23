@@ -187,7 +187,7 @@
             flex-direction: column
             gap: $spacing-2
         display: flex
-        flex-direction: row
+        flex-direction: column
         gap: $spacing-5
         .post-content
             display: flex
@@ -198,6 +198,8 @@
                     width: columns(5)
                 a
                     @include h5
+                    @include media-breakpoint-up(desktop)
+                        width: columns(3)
             .post-meta
                 order: -1
         .media
