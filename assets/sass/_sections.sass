@@ -66,7 +66,7 @@
                 img
                     @include style-image
 
-.organizations__section 
+.organizations__section
     .hero
         .content
             border-bottom: 1px solid var(--color-text)
@@ -146,8 +146,13 @@
                             display: none
                     p
                         margin-top: space(5)
+                        line-height: pxToRem(29)
                     .media
                         margin-bottom: space(15)
+                        .is-svg
+                            img
+                                object-position: left
+                                border-radius: 0
 
 .pages__section
     .block-pages
