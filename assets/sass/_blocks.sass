@@ -83,11 +83,15 @@
                     padding: space(10)
                     margin-bottom: space(5)
                     filter: grayscale(100%)
-            @include in-page-with-sidebar
+            @include media-breakpoint-down(desktop)
                 &.with-summaries
-                    @include grid(4) 
-                    .organization
-                        width: columns(2)
+                    @include grid(2) 
+            @include media-breakpoint-up(desktop)
+                @include in-page-with-sidebar
+                    &.with-summaries
+                        @include grid(4) 
+                        .organization
+                            width: columns(2)
                     
 // Page Rennes Metropole /partenaires/rennes-metropole/ > ne fonctionne pas ??
 .organizations__page
