@@ -102,14 +102,18 @@
                     aspect-ratio: 1.54/1
     .hero
         .content
-                figure
-                    button
-                        img
-                            @include media-breakpoint-down(desktop)
-                                width: columns(12)
-                                margin-left: auto
-                                margin-right: auto
-                                // margin-bottom: space(50)
+            border-bottom: 1px solid var(--color-text)
+            padding-bottom: space(18)
+            @include media-breakpoint-up(desktop)
+                --h1-size: #{pxToRem(58)}
+            figure
+                button
+                    img
+                        @include media-breakpoint-down(desktop)
+                            width: columns(12)
+                            margin-left: auto
+                            margin-right: auto
+                            // margin-bottom: space(50)
     .document-content
         .posts
             .post
