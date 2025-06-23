@@ -181,32 +181,6 @@
     .block-title
         @include h4
 
-.block-posts--carousel
-    .post
-        @include media-breakpoint-down(desktop)
-            flex-direction: column
-            gap: $spacing-2
-        display: flex
-        flex-direction: column
-        gap: $spacing-5
-        .post-content
-            display: flex
-            flex-direction: column
-            .post-title
-                order: -2
-                @include media-breakpoint-up(desktop)
-                    width: columns(5)
-                a
-                    @include h5
-                    @include media-breakpoint-up(desktop)
-                        width: columns(3)
-            .post-meta
-                order: -1
-        .media
-            overflow: unset
-            picture
-                @include media-breakpoint-up(desktop)
-                    width: columns(3)
 
 
 
