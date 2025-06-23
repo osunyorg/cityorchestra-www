@@ -67,13 +67,44 @@
 
 .block-organizations--grid
     .block-content
-        .organization
-            .organization-content
-                text-align: center
-            .media
-                border-radius: 200px
-                padding: space(13)
-                margin-bottom: space(5)
+        .grid
+        .with-summaries
+            @include grid(4) //ne fonctionne pas ??
+            .organization
+                display: flex
+                flex-direction: column
+                align-items: center
+                .organization-content
+                    text-align: center
+                    .organization-summary
+                        display: none
+                .media
+                    border-radius: 200px
+                    padding: space(10)
+                    margin-bottom: space(5)
+                    filter: grayscale(100%)
+
+// Page Rennes Metropole /partenaires/rennes-metropole/ > ne fonctionne pas ??
+.organizations__page
+    .page-with-blocks
+        .document-content
+            .organization-logo
+                margin-top: - space(30)
+                picture
+                    border-radius: 200px
+                    padding: space(20)
+                    margin-bottom: space(5)
+                    filter: grayscale(100%)
+            .articleBody
+                .organization-presentation
+                    > p:last-of-type
+                        a
+                            text-decoration: none
+                        a:hover
+                            color: $color-red
+                            text-decoration: none
+
+
 
 
 
