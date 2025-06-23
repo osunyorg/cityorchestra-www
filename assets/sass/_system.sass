@@ -15,6 +15,14 @@
             div#navigation.menu
                 ul
                     padding-top: 50px
+                    li
+                        a,
+                            &:hover
+                                color: var(--color-accent)
+                        .active,
+                        .has-children-active
+                            color: var(--color-accent)
+
 
 .hero
     margin-bottom: $spacing-3
