@@ -64,12 +64,14 @@
                 order: -2
             .post-meta
                 order: -1
+            .post-categories
+                li
+                    a
+                        text-decoration: none
 
 .block-organizations--grid
     .block-content
         .grid
-        .with-summaries
-            @include grid(4) //ne fonctionne pas ??
             .organization
                 display: flex
                 flex-direction: column
@@ -83,7 +85,9 @@
                     padding: space(10)
                     margin-bottom: space(5)
                     filter: grayscale(100%)
-
+        .with-summaries
+            @include grid(4) //ne fonctionne pas ??
+                    
 // Page Rennes Metropole /partenaires/rennes-metropole/ > ne fonctionne pas ??
 .organizations__page
     .page-with-blocks
