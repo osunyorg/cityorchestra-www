@@ -1,15 +1,20 @@
 #document-header
-    nav
-        .container::after
-            content: ""
-            order: 0
-            background-color: $color-text
-            height: 1px
-            width: columns(12)
-            @include media-breakpoint-up(desktop)
-                margin-top: space(5)
-            @include media-breakpoint-down(desktop)
-                margin-top: space(3)
+    nav.primary-menu
+        padding-bottom: 0px
+        .container
+            &::after
+                content: ""
+                order: 0
+                background-color: $color-text
+                height: 1px
+                width: columns(12)
+                @include media-breakpoint-up(desktop)
+                    margin-top: space(5)
+                @include media-breakpoint-down(desktop)
+                    margin-top: space(3)
+            div#navigation.menu
+                ul
+                    padding-top: 50px
 
 .hero
     margin-bottom: $spacing-3
