@@ -78,15 +78,16 @@
                 align-items: center
                 .organization-content
                     text-align: center
-                    .organization-summary
-                        display: none
                 .media
                     border-radius: 200px
                     padding: space(10)
                     margin-bottom: space(5)
                     filter: grayscale(100%)
-        .with-summaries
-            @include grid(4) //ne fonctionne pas ??
+            @include in-page-with-sidebar
+                &.with-summaries
+                    @include grid(4) 
+                    .organization
+                        width: columns(2)
                     
 // Page Rennes Metropole /partenaires/rennes-metropole/ > ne fonctionne pas ??
 .organizations__page
