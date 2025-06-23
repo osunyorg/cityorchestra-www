@@ -104,7 +104,7 @@
                     padding: space(20)
                     margin-bottom: space(5)
                     filter: grayscale(100%)
-            .articleBody
+            [itemprop="articleBody"]
                 .organization-presentation
                     > p:last-of-type
                         a,.link
@@ -182,6 +182,31 @@
         @include h4
 
 .block-posts--carousel
+    .post
+        @include media-breakpoint-down(desktop)
+            flex-direction: column
+            gap: $spacing-2
+        display: flex
+        flex-direction: row
+        gap: $spacing-5
+        .post-content
+            display: flex
+            flex-direction: column
+            .post-title
+                order: -2
+                @include media-breakpoint-up(desktop)
+                    width: columns(5)
+                a
+                    @include h5
+            .post-meta
+                order: -1
+        .media
+            overflow: unset
+            picture
+                @include media-breakpoint-up(desktop)
+                    width: columns(3)
+
+.block-posts--grid
     .post
         @include media-breakpoint-down(desktop)
             flex-direction: column
