@@ -1,8 +1,11 @@
 .blocks
     .top
         .block-title
-        h3
-            @include h4
+            h3
+                @include h4
+    .page-title
+        a
+            @include h5
     .block-title
         h2, a
             @include h4
@@ -100,16 +103,25 @@
                         text-decoration: none
     &--list
         article
-                .post-content
-                    @include in-page-with-sidebar
-                        width: columns(5)
-                    .post-title
-                        a
-                            @include in-page-with-sidebar
-                            @include h5
-                .media
-                    @include in-page-with-sidebar
-                        width: columns(3)
+            display: flex
+            .post-content
+                display: flex
+                flex-direction: column
+                @include in-page-with-sidebar
+                    width: columns(5)
+                .post-title
+                    display: flex
+                    order: -1
+                    a
+                        @include in-page-with-sidebar
+                        @include h5
+                .post-meta
+                    display: flex
+                    order: -1
+            .media
+                @include in-page-with-sidebar
+                    width: columns(3)
+
 
 .ancestor-use-cases
     .block-organizations--grid
@@ -160,7 +172,36 @@
                         .organization
                             width: columns(2)
 
-// Page Rennes Metropole /partenaires/rennes-metropole/ > ne fonctionne pas ??
+.block-links
+    .block-content
+        @include media-breakpoint-up(desktop)
+            ul
+                li
+                    background-color: $color-grey
+                    width: columns(8)
+                    display: block
+                    padding: $spacing-4
+                    @include style-image
+                    &:hover
+                        background-color: $color-accent
+                    a
+                        @include h5
+                        &::after
+                            position: absolute
+                            right: 2.75rem
+                            bottom: 1.75rem
+
+.block-testimonials
+    .block-content
+        figcaption
+            p
+                .signature
+                    font-weight: $bold
+
+
+
+
+
 .organizations__page
     .page-with-blocks
         .document-content
