@@ -1,0 +1,119 @@
+$color-green: #74b179
+$color-red: #C04E31
+$color-pink: #e7c1c8
+$color-grey-green: #B7B7B7
+$color-grey-pink: #CACACA
+$color-grey-red: #7D7D7D
+$color-grey: #F3F3F3
+$color-accent: $color-red
+$color-text: #000000
+$color-background: #FFFFFF
+
+// Header
+$header-background: $color-background
+$header-border-bottom-width: 0
+$header-logo-height: 50px
+$header-logo-height-desktop: 64px
+$header-dropdown-full: true
+$hero-background-color: none
+
+
+// Footer
+$footer-color: white
+$footer-background-color: $color-text
+$footer-logo-height: $header-logo-height
+$footer-logo-height-desktop: 130px
+
+// Typography
+$heading-font-family: "Inter", sans-serif
+$body-font-family: $heading-font-family
+
+// Different weights
+$light: 300
+$regular: 500
+$bold: 600
+
+// Body
+$body-size-desktop: pxToRem(20)
+$body-line-height-desktop: pxToRem(33)
+$body-weight: $light
+
+// h1
+$h1-size-desktop: pxToRem(72)
+$h1-line-height-desktop: 100%
+$h1-weight: $regular
+
+
+// h2
+$h2-size-desktop: pxToRem(58)
+$h2-line-height-desktop: pxToRem(73)
+$h2-weight: $regular
+
+// h3
+$h3-size-desktop: pxToRem(52)
+$h3-line-height-desktop: pxToRem(60)
+$h3-weight: $regular
+
+// h4
+$h4-size-desktop: pxToRem(32)
+$h4-line-height-desktop: pxToRem(45)
+$h4-weight: $regular
+
+// h5
+$h5-size-desktop: pxToRem(22)
+$h5-line-height-desktop: pxToRem(29)
+$h5-weight: $bold
+$h5-text-transform: normal
+
+//lead
+$lead-size-desktop: pxToRem(30)
+$lead-line-height-desktop: pxToRem(42)
+$lead-weight: $light
+
+// Meta
+$meta-size-desktop: pxToRem(16)
+$meta-line-height-desktop: pxToRem(25)
+$meta-weight: $light
+
+//Signature
+$signature-size-desktop: $meta-size-desktop
+$signature-line-height-desktop: $meta-line-height-desktop
+$signature-weight: $light
+
+// Quotes
+$quote-size-desktop-long: pxToRem(30)
+$quote-size-desktop: pxToRem(30)
+$quote-weight: $light
+$quote-line-height: pxToRem(42)
+$quote-line-height-desktop: $quote-line-height
+
+
+//Buttons
+$btn-border-radius: pxToRem(20)
+$button-border: 1px
+$button-border-radius-top-left: pxToRem(0)
+$btn-border-radius-desktop: $btn-border-radius
+
+//Button Hover
+$btn-hover-background: $color-text
+$btn-hover-color: $color-background
+
+//Numbers/Key-figures
+$block-key_figures-font-size-lg: pxToRem(29)
+$block-key_figures-number-font-size-lg: pxToRem(90)
+$block-key_figures-font-size-xl: pxToRem(29)
+$block-key_figures-number-font-size-xl: pxToRem(90)
+$block-key_figures-font-size-xxl: pxToRem(29)
+$block-key_figures-number-font-size-xxl: pxToRem(173)
+$block-key_figures-number-font-weight: $regular
+
+// specific variables
+$components-border-radius: pxToRem(50)
+
+// Block Testimonials
+$block-testimonials-color: var(--color-text)
+
+@mixin style-image
+    border-radius: $components-border-radius
+    border-top-left-radius: 0
+    object-fit: cover
