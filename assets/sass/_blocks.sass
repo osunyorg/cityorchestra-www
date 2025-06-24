@@ -23,6 +23,7 @@
                     img
                         aspect-ratio: 1.54/1
                         object-fit: cover
+        
 
 
 
@@ -46,14 +47,13 @@
                         width: columns(5)
                     img
                         aspect-ratio: 1.54/1
-
-            .page-title a
-                @include h3
-                text-decoration: none
+            .page-title
+                a
+                    @include h3
+                    text-decoration: none
             .page-content
                 .page-title
-                    font-size: $h3-size-desktop
-                    font-weight: $regular
+                    @include h3
                     @include media-breakpoint-up(desktop)
                         width: columns(6)
                 p
