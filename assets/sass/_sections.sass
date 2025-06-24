@@ -136,64 +136,7 @@
             padding-bottom: space(5)
             min-height: 0
 
-.page__home
-    &.full-width
-        .block-pages--grid
-            .grid
-                @include grid(4,desktop)
-                article
-                    @include media-breakpoint-down(desktop)
-                        margin-top: space(12)
-                    .page-title
-                        @include h5
-                        a::after
-                            display: none
-                    p
-                        margin-top: space(5)
-                        line-height: pxToRem(29)
-                    .media
-                        margin-bottom: space(15)
-                        .is-svg
-                            img
-                                object-position: left
-                                border-radius: 0
 
-.pages__section
-    .block-organizations--grid
-        .block-content
-            .grid
-                .organization
-                    .media--logo
-                        border-radius: 200px
-
-    .block-pages
-        &.block-class-alt-background
-            .page
-                background-color: $color-grey
-                padding: $spacing-4
-                @include style-image
-                p
-                    @include media-breakpoint-up(desktop)
-                        width: columns(7)
-                .page-title
-                    @include h5
-
-        &.block-pages--grid
-            .page-title
-                @include h5
-            .grid
-                @include grid(4,desktop)
-                .page
-                    @include media-breakpoint-down(desktop)
-                        margin-top: space(12)
-                        margin-bottom: space(20)
-
-                    .page-title
-                        @include h5
-                        a::after
-                            display: none
-                    p
-                        margin-top: space(5)
 
 
 // Vérifier ce style qui semble obsolète
