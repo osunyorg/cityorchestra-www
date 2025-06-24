@@ -103,16 +103,25 @@
                         text-decoration: none
     &--list
         article
-                .post-content
-                    @include in-page-with-sidebar
-                        width: columns(5)
-                    .post-title
-                        a
-                            @include in-page-with-sidebar
-                            @include h5
-                .media
-                    @include in-page-with-sidebar
-                        width: columns(3)
+            display: flex
+            .post-content
+                display: flex
+                flex-direction: column
+                @include in-page-with-sidebar
+                    width: columns(5)
+                .post-title
+                    display: flex
+                    order: -1
+                    a
+                        @include in-page-with-sidebar
+                        @include h5
+                .post-meta
+                    display: flex
+                    order: -1
+            .media
+                @include in-page-with-sidebar
+                    width: columns(3)
+
 
 .ancestor-use-cases
     .block-organizations--grid
