@@ -145,44 +145,14 @@
                         object-fit: cover
 
 
-
-
-.ancestor-use-cases
-    .block-organizations--grid
-        .block-content
-            .grid
-                .organization
-                    display: flex
-                    flex-direction: column
-                    align-items: center
-                    .organization-content
-                        text-align: center
-                    .media
-                        border-radius: 200px
-                        padding: space(6)
-                        margin-bottom: space(8)
-                        filter: grayscale(100%)
-                @include media-breakpoint-down(desktop)
-                    &.with-summaries
-                        @include grid(2)
-                @include media-breakpoint-up(desktop)
-                    @include in-page-with-sidebar
-                        &.with-summaries
-                            @include grid(4)
-                            .organization
-                                width: columns(2)
-
 .block-organizations--grid
     .block-content
         .grid
             .organization
-                display: flex
-                flex-direction: column
-                align-items: center
                 .organization-content
                     text-align: center
                 .media
-                    border-radius: 200px
+                    border-radius: 50%
                     padding: space(10)
                     margin-bottom: space(5)
                     filter: grayscale(100%)
@@ -236,7 +206,7 @@
             .organization-logo
                 margin-top: - space(30)
                 picture
-                    border-radius: 200px
+                    border-radius: 50%
                     padding: space(20)
                     margin-bottom: space(5)
                     filter: grayscale(100%)
@@ -338,14 +308,6 @@
                                 object-position: left
                                 border-radius: 0
 
-.pages__section
-    .block-organizations--grid
-        .block-content
-            .grid
-                .organization
-                    .media
-                        border-radius: 200px
-                        padding: space(8)
 
 
 
