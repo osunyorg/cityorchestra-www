@@ -186,6 +186,8 @@
                     padding: space(10)
                     margin-bottom: space(5)
                     filter: grayscale(100%)
+                    @include media-breakpoint-down(desktop)
+                        padding: space(4)
             @include media-breakpoint-down(desktop)
                 &.with-summaries
                     @include grid(2)
