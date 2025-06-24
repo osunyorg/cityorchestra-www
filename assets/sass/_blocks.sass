@@ -12,12 +12,21 @@
     .block-page-use-cases
         .list
             article
-                .page-title a
-                    @include h3
+                .page-title
+                    @include media-breakpoint-up(desktop)
+                            width: columns(5)
+                    a
+                        @include h3
                 .media
+                    @include media-breakpoint-up(desktop)
+                            width: columns(3)
                     img
-                        aspect-ratio: 4/3
+                        aspect-ratio: 1.54/1
                         object-fit: cover
+
+
+
+
 
 .block-pages
     &--list
