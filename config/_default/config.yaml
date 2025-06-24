@@ -15,3 +15,6 @@ params:
           active: true
           source: "Summary" # "Summary" | "meta_description"
           truncate: 250
+  home:
+    head:
+      title: site
