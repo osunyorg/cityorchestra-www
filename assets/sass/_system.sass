@@ -1,15 +1,34 @@
 #document-header
-    nav
-        .container::after
-            content: ""
-            order: 0
-            background-color: $color-text
-            height: 1px
-            width: columns(12)
-            @include media-breakpoint-up(desktop)
-                margin-top: space(5)
-            @include media-breakpoint-down(desktop)
-                margin-top: space(3)
+    nav.primary-menu
+        padding-bottom: 0px
+        .container
+            &::after
+                content: ""
+                order: 0
+                background-color: $color-text
+                height: 1px
+                width: columns(12)
+                @include media-breakpoint-up(desktop)
+                    margin-top: space(5)
+                @include media-breakpoint-down(desktop)
+                    margin-top: space(3)
+            div#navigation.menu
+                ul
+                    padding-top: 50px
+                    li
+                        a,
+                            &:hover
+                                color: var(--color-accent)
+                        .active,
+                        .has-children-active
+                            color: var(--color-accent)
+            .menu
+                .dropdown-menu
+                    .nav-level-2
+                        li
+                            a
+                                @include h5
+                                text-decoration: none
 
 .hero
     margin-bottom: $spacing-3
@@ -139,6 +158,30 @@ footer#document-footer
         li,
         .footer-credit
             margin-top: 0
+
+// .organizations_categories__term
+//     #main
+//         margin-bottom: space(20)
+//     .document-content
+//         .organizations
+//             .organization
+//                 display: flex
+//                 flex-direction: column
+//                 align-items: center
+//                 .media
+//                     border-radius: 200px
+//                     padding: space(10)
+//                     margin-bottom: space(5)
+//                     filter: grayscale(100%)
+
+
+
+.toc-container
+    .toc-pages
+        li
+            a.active,
+                text-decoration: underline
+                color: var(--color-text)
 
 
 // Comment améliorer le slider qu'il soit beau en mobile ?
