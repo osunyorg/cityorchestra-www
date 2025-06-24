@@ -171,6 +171,22 @@
                     @include media-breakpoint-down(desktop)
                         width: revert-layer
 
+
+.block-posts--list
+    article
+        .post-content
+            @include in-page-without-sidebar
+                width: columns(5)
+            .post-title
+                a
+                    @include in-page-with-sidebar
+                    @include h5
+        .media
+            @include in-page-without-sidebar
+                width: columns(3)
+
+
+
 .block-siblings-navigation
     .block-content
         .siblings-navigation
