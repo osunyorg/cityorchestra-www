@@ -58,10 +58,11 @@
                     content: ""
                     order: -1
                     height: 1px
-                    width: columns(12)
                     background-color: $color-text
                     @include media-breakpoint-down(desktop)
                         display: none
+                    @include media-breakpoint-up(xl)
+                        width: columns(11)
                 p
                     width: columns(9)
             > p:first-of-type
