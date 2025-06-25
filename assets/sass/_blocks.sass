@@ -147,7 +147,14 @@
 
 .block-organizations--grid
     .block-content
-        .grid
+        .organizations
+            @include in-page-with-sidebar
+                &.with-summaries
+                    @include grid(4)
+                    .organization
+                        width: columns(2)
+                        flex-direction: column
+
             .organization
                 .organization-content
                     text-align: center
@@ -158,15 +165,9 @@
                     filter: grayscale(100%)
                     @include media-breakpoint-down(desktop)
                         padding: space(4)
-            @include media-breakpoint-down(desktop)
-                &.with-summaries
-                    @include grid(2)
-            @include media-breakpoint-up(desktop)
-                @include in-page-with-sidebar
-                    &.with-summaries
-                        @include grid(4)
-                        .organization
-                            width: columns(2)
+
+
+
 
 .block-links
     .block-content
@@ -198,13 +199,12 @@
 
 
 
-
-
 .organizations__page
     .page-with-blocks
         .document-content
             .organization-logo
-                margin-top: - space(30)
+                @include media-breakpoint-up(desktop)
+                    margin-top: - space(30)
                 picture
                     border-radius: 50%
                     padding: space(20)
