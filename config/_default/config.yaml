@@ -22,6 +22,10 @@ params:
   events:
     sitemap:
       ignore_children: true
+  organizations:
+    index:
+      taxonomies:
+        display: false
   home:
     head:
       title: site
