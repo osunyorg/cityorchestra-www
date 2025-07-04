@@ -30,7 +30,33 @@
                                 @include h5
                                 text-decoration: none
 
+.posts__section
+.organizations__section
+    .hero
+        .content
+            .hero-text
+                margin-top: 0
 .hero
+    &--image-landscape
+    &--image-portrait
+    .content
+        align-items: center
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    margin-right: auto
+    button
+        width: 100%
+        display: flex
+        justify-content: flex-end
+        @include media-breakpoint-down(desktop)
+            justify-content: center
+    .is-svg
+        width: columns(3)
+        @include media-breakpoint-down(desktop)
+            width: columns(6) // too small for mobile ?
+
+    
     margin-bottom: $spacing-3
     .hero-actions
         .btn
