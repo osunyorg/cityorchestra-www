@@ -15,7 +15,6 @@ params:
           active: true
           source: "Summary" # "Summary" | "meta_description"
           truncate: 250
-  
   persons:
     sitemap:
       ignore_children: true
@@ -29,3 +28,7 @@ params:
   home:
     head:
       title: site
+  blocks:
+    organizations:
+      slider:
+        progression: false
