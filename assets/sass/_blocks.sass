@@ -145,27 +145,6 @@
                         object-fit: cover
 
 
-.block-organizations--grid
-    .block-content
-        .organizations
-            @include in-page-with-sidebar
-                &.with-summaries
-                    @include grid(4)
-                    .organization
-                        width: columns(2)
-                        gap: 0
-                        flex-direction: column
-
-            .organization
-                .organization-content
-                    text-align: center
-                .media
-                    border-radius: 50%
-                    padding: space(10)
-                    margin-bottom: space(5)
-                    filter: grayscale(100%)
-                    @include media-breakpoint-down(desktop)
-                        padding: space(4)
 
 
 
@@ -199,6 +178,15 @@
                     font-weight: $bold
 
 
+// organizations
+.organization
+    .organization-content
+        text-align: center
+    .media
+        border-radius: 50%
+        padding: space(10)
+        margin-bottom: space(5)
+        filter: grayscale(100%)
 
 .organizations__page
     .page-with-blocks
@@ -220,6 +208,25 @@
                             color: $color-red
                             text-decoration: none
 
+.block-organizations
+    &--grid
+        .block-content
+            .organizations
+                @include in-page-with-sidebar
+                    &.with-summaries
+                        @include grid(4)
+                        .organization
+                            width: columns(2)
+                            gap: 0
+                            flex-direction: column
+        @include media-breakpoint-down(desktop)
+            .media
+                padding: space(4)
+    &--carousel
+        @include media-breakpoint-down(desktop)
+            .slider
+                .slider-list > li
+                    width: columns(8)
 
 
 .block-key_figures
@@ -309,6 +316,10 @@
                                 object-position: left
                                 border-radius: 0
 
+    @include media-breakpoint-up(desktop)
+        // make a page block as a title for the organizations right after it
+        .block-pages--list.block-titled + .block-organizations
+            margin-top: calc(var(--block-space-y) * -1)
 
 
 
