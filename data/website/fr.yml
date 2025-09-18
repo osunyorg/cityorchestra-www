@@ -1,0 +1,52 @@
+default:
+  image:
+    id: b846b365-4aea-45e4-ab30-6eab03d667d2
+  shared_image:
+    id: fb498e5d-dca1-4bc4-a159-3dfe8a6d8bd2
+contents_reading_time:
+  seconds: 0
+  text: >-
+    moins d'une minute
+contents:
+  - kind: block
+    template: organizations
+    title: >-
+      
+    slug: >-
+      
+    ranks:
+      base: 2
+      children: 2
+    top:
+      active: false
+    data:
+      layout: grid
+      description: >-
+        
+
+      options:
+        link: true
+        logo: true
+        summary: false
+        address: false
+        filters: false
+
+      organizations:
+        - permalink: "/partenaires/gouvernement/"
+          path: "/organizations/gouvernement"
+          slug: "gouvernement"
+          file: "content/fr/organizations/gouvernement.html"
+          role: >-
+            
+
+        - permalink: "/partenaires/france-2030/"
+          path: "/organizations/france-2030"
+          slug: "france-2030"
+          file: "content/fr/organizations/france-2030.html"
+          role: >-
+            
+
+      quantity: 2
+
+
+
