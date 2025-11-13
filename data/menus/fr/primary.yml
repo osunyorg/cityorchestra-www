@@ -92,4 +92,11 @@ items:
   children: []
   path: "/posts"
   file: content/fr/posts/_index.html
+- title: Ressources
+  target: "/espace-ressources-1/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/espace-ressources-1"
+  file: content/fr/pages/espace-ressources-1/_index.html
 
