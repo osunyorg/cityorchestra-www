@@ -8,45 +8,4 @@ contents_reading_time:
   text: >-
     moins d'une minute
 contents:
-  - kind: block
-    template: organizations
-    title: >-
-      
-    slug: >-
-      
-    ranks:
-      base: 2
-      children: 2
-    top:
-      active: false
-    data:
-      layout: grid
-      description: >-
-        
-
-      options:
-        link: true
-        logo: true
-        summary: false
-        address: false
-        filters: false
-
-      organizations:
-        - permalink: "/partenaires/gouvernement/"
-          path: "/organizations/gouvernement"
-          slug: "gouvernement"
-          file: "content/fr/organizations/gouvernement.html"
-          role: >-
-            
-
-        - permalink: "/partenaires/france-2030/"
-          path: "/organizations/france-2030"
-          slug: "france-2030"
-          file: "content/fr/organizations/france-2030.html"
-          role: >-
-            
-
-      quantity: 2
-
-
 
