@@ -1,4 +1,4 @@
-#document-header
+header#document-header
     nav.primary-menu
         padding-bottom: 0px
         .container
@@ -14,7 +14,6 @@
                     margin-top: space(3)
             div#navigation.menu
                 ul
-                    padding-top: 50px
                     li
                         a,
                             &:hover
@@ -29,6 +28,12 @@
                             a
                                 @include h5
                                 text-decoration: none
+    @include media-breakpoint-up(desktop)
+        .primary-menu
+            > .container
+                align-items: baseline
+                .menu
+                    margin-bottom: pxToRem(-10)
 
 .posts__section
 .organizations__section
@@ -36,15 +41,15 @@
         .content
             .hero-text
                 margin-top: 0
+
 .hero
-    &--image-landscape
-    &--image-portrait
-    .content
-        align-items: center
     display: flex
     justify-content: flex-end
     align-items: center
     margin-right: auto
+    padding-bottom: 0
+    .content
+        align-items: center
     button
         width: 100%
         display: flex
@@ -55,9 +60,6 @@
         width: columns(3)
         @include media-breakpoint-down(desktop)
             width: columns(6) // too small for mobile ?
-
-    
-    margin-bottom: $spacing-3
     .hero-actions
         .btn
             @extend .button--small
@@ -113,6 +115,7 @@
         &:where(:not(.has-breadcrumb-hero-end))
             @include media-breakpoint-down(desktop)
                 margin-bottom: 0
+
 .hero--image-landscape
     .content
         figure

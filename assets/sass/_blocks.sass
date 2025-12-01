@@ -10,7 +10,7 @@
         h2, a
             @include h4
     .block-page-use-cases
-        .list
+        .pages
             article
                 .page-title
                     @include media-breakpoint-up(desktop)
@@ -97,7 +97,7 @@
                     margin-top: space(5)
 
 .block-posts
-    .grid
+    .posts
         .post-content
             display: flex
             flex-direction: column
@@ -114,39 +114,62 @@
             @include style-image
             img
                 aspect-ratio: 1.54/1
-    &--list
+
+.posts__section .posts--list,
+.block-posts--list .posts
+    > li 
+        border: none
         article
+            margin-bottom: 0
+    
+    article
+        display: flex
+
+        .post-content
             display: flex
-            .post-content
+            flex-direction: column
+            .post-title
                 display: flex
-                flex-direction: column
-                @include in-page-with-sidebar
-                    width: columns(5)
-                .post-title
-                    display: flex
-                    order: -1
-                    a
-                        @include in-page-with-sidebar
-                        @include h5
-                .post-meta
-                    display: flex
-                    order: -1
-            .media
-                @include in-page-with-sidebar
-                    width: columns(3)
-                @include media-breakpoint-down(desktop)
+                order: -2
+                a
                     @include in-page-with-sidebar
-                    width: columns(15)
-                    max-width: 100%
+                    @include h5
+            .post-categories
+                order: -1
+            .media img
+                aspect-ratio: 1.54/1
+        
+        // with sidebar
+        @include media-breakpoint-up(desktop)
+            .post-content
+                width: columns(5)
+            
+            .media
+                width: columns(3)
+
+        @include media-breakpoint-down(desktop)
+            .post-meta
+                margin-top: $spacing-1
+            
+            .media
+                max-width: 100%
                 img
                     aspect-ratio: 1.54/1
-                    @include media-breakpoint-down(desktop)
-                        aspect-ratio: 1.54/1
-                        object-fit: cover
+                    object-fit: cover
 
-
-
-
+body.full-width
+    .posts--list,
+    .block-posts--list
+        > li 
+            padding-bottom: 0
+            + li
+                margin-top: space(8)
+        article
+            @include media-breakpoint-up(desktop)
+                .post-content
+                    width: columns(6)
+                .media
+                    width: columns(4)
 
 
 .block-links
@@ -292,12 +315,10 @@
             a
                 font-weight: $bold
 
-
-
 .page__home
     &.full-width
         .block-pages--grid
-            .grid
+            .pages
                 @include grid(4,desktop)
                 article
                     @include media-breakpoint-down(desktop)
