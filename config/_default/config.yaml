@@ -33,3 +33,9 @@ params:
     organizations:
       slider:
         progression: false
+  image_sizes:
+    sections:
+      posts:
+        layouts:
+          list:
+            desktop:  575
