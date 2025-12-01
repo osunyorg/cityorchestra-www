@@ -134,10 +134,6 @@
                 a
                     @include in-page-with-sidebar
                     @include h5
-            .post-meta
-                display: flex
-                order: -1
-                margin-top: 0
             .post-categories
                 order: -1
             .media img
@@ -147,13 +143,19 @@
         @include media-breakpoint-up(desktop)
             .post-content
                 width: columns(5)
+            
             .media
                 width: columns(3)
 
         @include media-breakpoint-down(desktop)
+            .post-meta
+                margin-top: $spacing-1
+            
             .media
-                aspect-ratio: 1.54/1
-                object-fit: cover
+                max-width: 100%
+                img
+                    aspect-ratio: 1.54/1
+                    object-fit: cover
 
 body.full-width
     .posts--list,
