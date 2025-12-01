@@ -10,7 +10,7 @@
         h2, a
             @include h4
     .block-page-use-cases
-        .list
+        .pages
             article
                 .page-title
                     @include media-breakpoint-up(desktop)
@@ -97,7 +97,7 @@
                     margin-top: space(5)
 
 .block-posts
-    .grid
+    .posts
         .post-content
             display: flex
             flex-direction: column
@@ -292,12 +292,10 @@
             a
                 font-weight: $bold
 
-
-
 .page__home
     &.full-width
         .block-pages--grid
-            .grid
+            .pages
                 @include grid(4,desktop)
                 article
                     @include media-breakpoint-down(desktop)
