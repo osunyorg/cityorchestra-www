@@ -1,7 +1,7 @@
 theme: osuny
 _merge: deep
 params:
-  additional_csp: app.sig.rennesmetropole.fr 'unsafe-inline'
+  additional_csp: matomo.sig.rennesmetropole.fr 'unsafe-inline'
   summary:
     position: hero
   search:
