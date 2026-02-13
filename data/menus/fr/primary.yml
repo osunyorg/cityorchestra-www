@@ -2,101 +2,137 @@
 title: Menu principal
 items:
 - title: Projet
+  slug: projet
   target: "/projet/"
   kind: page
   new_tab: false
   children:
   - title: City Orchestra ?
+    slug: city-orchestra
     target: "/projet/presentation/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/projet/presentation"
     file: content/fr/pages/projet/presentation/_index.html
   - title: Des données à orchestrer
+    slug: des-donnees-a-orchestrer
     target: "/projet/orchestration/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/projet/orchestration"
     file: content/fr/pages/projet/orchestration/_index.html
   - title: Une gouvernance à construire
+    slug: une-gouvernance-a-construire
     target: "/projet/gouvernance/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/projet/gouvernance"
     file: content/fr/pages/projet/gouvernance/_index.html
   - title: Un enjeu de réplicabilité
+    slug: un-enjeu-de-replicabilite
     target: "/projet/replicabilite/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/projet/replicabilite"
     file: content/fr/pages/projet/replicabilite/_index.html
+  descendants_targets:
+  - "/projet/gouvernance/"
+  - "/projet/orchestration/"
+  - "/projet/presentation/"
+  - "/projet/replicabilite/"
   path: "/pages/projet"
   file: content/fr/pages/projet/_index.html
 - title: Cas d'usages
+  slug: cas-d-usages
   target: "/usages/"
   kind: page
   new_tab: false
   children:
   - title: Adaptation au changement climatique
+    slug: adaptation-au-changement-climatique
     target: "/usages/adaptation-changement-climatique/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/usages/adaptation-changement-climatique"
     file: content/fr/pages/usages/adaptation-changement-climatique/_index.html
   - title: Amélioration de la qualité de l'air
+    slug: amelioration-de-la-qualite-de-l-air
     target: "/usages/amelioration-qualite-air/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/usages/amelioration-qualite-air"
     file: content/fr/pages/usages/amelioration-qualite-air/_index.html
   - title: Efficacité énergétique
+    slug: efficacite-energetique
     target: "/usages/efficacite-energetique/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/usages/efficacite-energetique"
     file: content/fr/pages/usages/efficacite-energetique/_index.html
   - title: Gestion responsable du foncier
+    slug: gestion-responsable-du-foncier
     target: "/usages/gestion-responsable-foncier/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/usages/gestion-responsable-foncier"
     file: content/fr/pages/usages/gestion-responsable-foncier/_index.html
+  descendants_targets:
+  - "/usages/adaptation-changement-climatique/"
+  - "/usages/amelioration-qualite-air/"
+  - "/usages/efficacite-energetique/"
+  - "/usages/gestion-responsable-foncier/"
   path: "/pages/usages"
   file: content/fr/pages/usages/_index.html
 - title: Partenaires
+  slug: partenaires
   target: "/partenaires/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/organizations"
   file: content/fr/organizations/_index.html
 - title: Réseau et soutien
+  slug: reseau-et-soutien
   target: "/reseau-et-soutien/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/reseau-et-soutien"
   file: content/fr/pages/reseau-et-soutien/_index.html
 - title: Actualités
+  slug: actualites
   target: "/actualites/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/posts"
   file: content/fr/posts/_index.html
 - title: Ressources
+  slug: ressources
   target: "/ressources/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/ressources"
   file: content/fr/pages/ressources/_index.html
 
