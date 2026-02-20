@@ -172,27 +172,46 @@ body.full-width
                     width: columns(4)
 
 
-.block-links
+.block-links--cards
     .block-content
         ul
+            display: flex
+            flex-direction: column
             li
+                @include style-image
                 background-color: $color-grey
                 width: columns(8)
-                display: block
-                padding: $spacing-4
-                @include style-image
+                overflow: hidden
+                .link-content
+                    padding: $spacing-4
+                    min-height: 0
                 @include media-breakpoint-down(desktop)
                     width: 100%
-                    padding: 10px
+                    .link-content
+                        padding: $spacing-3
+                        p
+                            padding-bottom: $spacing-1
                 &:hover
                     background-color: $color-accent
                 a
                     @include h5
+                    span
+                        @include icon("arrow-right-line", after)
+                            padding-left: $spacing-1
                     &::after
-                        position: absolute
-                        right: 2.75rem
-                        bottom: 1.75rem
-
+                        display: none !important
+                &:has(.media--icon)
+                    .media--icon
+                        margin-left: $spacing-4
+                        margin-top: $spacing-4
+                        margin-bottom: $spacing-2
+                        img
+                            margin: 0
+                        @include media-breakpoint-down(desktop)
+                            margin-left: $spacing-3
+                            margin-top: $spacing-3
+                    .link-content
+                        padding-top: 0
 .block-testimonials
     .block-content
         figcaption
