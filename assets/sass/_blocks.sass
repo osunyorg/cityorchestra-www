@@ -171,50 +171,51 @@ body.full-width
                 .media
                     width: columns(4)
 
-
-.block-links--cards
+.block-links
     .block-content
-        ul
-            &:has(li:only-child)
-                display: flex !important
-                flex-direction: column
+        a
+            @include h5
+    &--cards
+        .block-content
+            ul
+                &:has(li:only-child)
+                    display: flex !important
+                    flex-direction: column
+                    li
+                        width: 100%
                 li
-                    width: 100%
+                    @include style-image
+                    background-color: $color-grey
+                    overflow: hidden
+                    .link-content
+                        padding: $spacing-4
+                        min-height: 0
+                    @include media-breakpoint-down(desktop)
+                        width: 100%
+                        .link-content
+                            padding: $spacing-3
+                            p
+                                padding-bottom: $spacing-1
+                    &:hover
+                        background-color: $color-accent
+                        span
+                            @include icon("arrow-right-line", after)
+                                padding-left: $spacing-1
+                        &::after
+                            display: none !important
+                    &:has(.media--icon)
+                        .media--icon
+                            margin-left: $spacing-4
+                            margin-top: $spacing-4
+                            margin-bottom: $spacing-2
+                            img
+                                margin: 0
+                            @include media-breakpoint-down(desktop)
+                                margin-left: $spacing-3
+                                margin-top: $spacing-3
+                        .link-content
+                            padding-top: 0
 
-            li
-                @include style-image
-                background-color: $color-grey
-                overflow: hidden
-                .link-content
-                    padding: $spacing-4
-                    min-height: 0
-                @include media-breakpoint-down(desktop)
-                    width: 100%
-                    .link-content
-                        padding: $spacing-3
-                        p
-                            padding-bottom: $spacing-1
-                &:hover
-                    background-color: $color-accent
-                a
-                    @include h5
-                    span
-                        @include icon("arrow-right-line", after)
-                            padding-left: $spacing-1
-                    &::after
-                        display: none !important
-                &:has(.media--icon)
-                    .media--icon
-                        margin-left: $spacing-4
-                        margin-top: $spacing-4
-                        margin-bottom: $spacing-2
-                        img
-                            margin: 0
-                        @include media-breakpoint-down(desktop)
-                            margin-left: $spacing-3
-                            margin-top: $spacing-3
-                    .link-content
-                        padding-top: 0
 .block-testimonials
     .block-content
         figcaption
