@@ -15,170 +15,170 @@ for = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp"]
 Cache-Control = "max-age=31536000, no-transform, public"
 
 [[redirects]]
-from = "/actualites/2026-04-16-comment-vulgariser-les-donnees-sur-les-chaufferies-urbaines-un-defi-releve-hackathon-sante-durable/index.html"
+from = "/actualites/2026-04-16-comment-vulgariser-les-donnees-sur-les-chaufferies-urbaines-un-defi-releve-hackathon-sante-durable/"
 to = "/actualites/2026-04-16-vulgariser-les-donnees-sur-les-chaufferies-urbaines-un-defi-releve-hackathon-sante-durable/"
 
 [[redirects]]
-from = "/organisations/index.html"
+from = "/organisations/"
 to = "/partenaires/"
 
 [[redirects]]
-from = "/actualites/reponses-operationnelles/adaptation-au-changement-climatique/index.html"
+from = "/actualites/reponses-operationnelles/adaptation-au-changement-climatique/"
 to = "/actualites/cu/adaptation-au-changement-climatique/"
 
 [[redirects]]
-from = "/reponses-operationnelles/gestion-responsable-du-foncier/index.html"
+from = "/reponses-operationnelles/gestion-responsable-du-foncier/"
 to = "/usages/gestion-responsable-foncier/"
 
 [[redirects]]
-from = "/actualites/reponses-operationnelles/zan/index.html"
+from = "/actualites/reponses-operationnelles/zan/"
 to = "/actualites/cu/zan/"
 
 [[redirects]]
-from = "/projet/orchestrer-les-donnees-du-territoire/index.html"
+from = "/projet/orchestrer-les-donnees-du-territoire/"
 to = "/projet/orchestration/"
 
 [[redirects]]
-from = "/projet/un-enjeu-de-replicabilite/index.html"
+from = "/projet/un-enjeu-de-replicabilite/"
 to = "/projet/replicabilite/"
 
 [[redirects]]
-from = "/adaptation-au-changement-climatique/index.html"
+from = "/adaptation-au-changement-climatique/"
 to = "/usages/adaptation-changement-climatique/"
 
 [[redirects]]
-from = "/reponses-operationnelles/index.html"
+from = "/reponses-operationnelles/"
 to = "/usages/"
 
 [[redirects]]
-from = "/soutien-et-reseau/index.html"
+from = "/soutien-et-reseau/"
 to = "/reseau-et-soutien/"
 
 [[redirects]]
-from = "/actualites/reponses-operationnelles/qualite-air/index.html"
+from = "/actualites/reponses-operationnelles/qualite-air/"
 to = "/actualites/cu/qualite-air/"
 
 [[redirects]]
-from = "/reseau-soutien/index.html"
+from = "/reseau-soutien/"
 to = "/reseau-et-soutien/"
 
 [[redirects]]
-from = "/projet/projet-1/index.html"
+from = "/projet/projet-1/"
 to = "/projet/presentation/"
 
 [[redirects]]
-from = "/connaissance-du-territoire/index.html"
+from = "/connaissance-du-territoire/"
 to = "/usages/adaptation-changement-climatique/"
 
 [[redirects]]
-from = "/actualites/2025-11-17-2-ans-de-projet-city-orchestra/index.html"
+from = "/actualites/2025-11-17-2-ans-de-projet-city-orchestra/"
 to = "/actualites/2025-11-17-evenement-2025/"
 
 [[redirects]]
-from = "/actualites/reponses-operationnelles/index.html"
+from = "/actualites/reponses-operationnelles/"
 to = "/actualites/cu/"
 
 [[redirects]]
-from = "/actualites/evenement/index.html"
+from = "/actualites/evenement/"
 to = "/actualites/evenements/"
 
 [[redirects]]
-from = "/actualites/qualite-air/index.html"
+from = "/actualites/qualite-air/"
 to = "/actualites/cu/qualite-air/"
 
 [[redirects]]
-from = "/gestion-responsable-du-foncier/index.html"
+from = "/gestion-responsable-du-foncier/"
 to = "/usages/gestion-responsable-foncier/"
 
 [[redirects]]
-from = "/projet/construire-la-gouvernance/index.html"
+from = "/projet/construire-la-gouvernance/"
 to = "/projet/gouvernance/"
 
 [[redirects]]
-from = "/usages/adaptation-au-changement-climatique/index.html"
+from = "/usages/adaptation-au-changement-climatique/"
 to = "/usages/adaptation-changement-climatique/"
 
 [[redirects]]
-from = "/evaluation-de-lefficacite/index.html"
+from = "/evaluation-de-lefficacite/"
 to = "/usages/amelioration-qualite-air/"
 
 [[redirects]]
-from = "/equipe/marilou-vuillemet/actualites/index.html"
+from = "/equipe/marilou-vuillemet/actualites/"
 to = "/marilou-vuillemet/actualites/"
 
 [[redirects]]
-from = "/reponses-operationnelles/efficacite-energetique/index.html"
+from = "/reponses-operationnelles/efficacite-energetique/"
 to = "/usages/efficacite-energetique/"
 
 [[redirects]]
-from = "/organisations/brest-metropole/index.html"
+from = "/organisations/brest-metropole/"
 to = "/partenaires/brest-metropole/"
 
 [[redirects]]
-from = "/actualites/2023-11-02-city-orchestra-laureat-tid/index.html"
+from = "/actualites/2023-11-02-city-orchestra-laureat-tid/"
 to = "/actualites/2023-06-07-city-orchestra-laureat-tid/"
 
 [[redirects]]
-from = "/equipe/marilou-vuillemet/index.html"
+from = "/equipe/marilou-vuillemet/"
 to = "/marilou-vuillemet/"
 
 [[redirects]]
-from = "/agenda/2025/index.html"
+from = "/agenda/2025/"
 to = "/2025/"
 
 [[redirects]]
-from = "/organisations/region-bretagne/index.html"
+from = "/organisations/region-bretagne/"
 to = "/partenaires/region-bretagne/"
 
 [[redirects]]
-from = "/agenda/2025/03/index.html"
+from = "/agenda/2025/03/"
 to = "/2025/03/"
 
 [[redirects]]
-from = "/actualites/reponses-operationnelles/efficacite-energetique/index.html"
+from = "/actualites/reponses-operationnelles/efficacite-energetique/"
 to = "/actualites/cu/efficacite-energetique/"
 
 [[redirects]]
-from = "/reponses-operationnelles/adaptation-au-changement-climatique/index.html"
+from = "/reponses-operationnelles/adaptation-au-changement-climatique/"
 to = "/usages/adaptation-changement-climatique/"
 
 [[redirects]]
-from = "/actualites/adaptation-au-changement-climatique/index.html"
+from = "/actualites/adaptation-au-changement-climatique/"
 to = "/actualites/cu/adaptation-au-changement-climatique/"
 
 [[redirects]]
-from = "/efficacite-energetique/index.html"
+from = "/efficacite-energetique/"
 to = "/usages/efficacite-energetique/"
 
 [[redirects]]
-from = "/projet/city-orchestra/index.html"
+from = "/projet/city-orchestra/"
 to = "/projet/presentation/"
 
 [[redirects]]
-from = "/organisations/ille-villaine/index.html"
+from = "/organisations/ille-villaine/"
 to = "/partenaires/ille-villaine/"
 
 [[redirects]]
-from = "/actualites/2023-11-07-city-orchestra-laureat-tid/index.html"
+from = "/actualites/2023-11-07-city-orchestra-laureat-tid/"
 to = "/actualites/2023-06-07-city-orchestra-laureat-tid/"
 
 [[redirects]]
-from = "/espace-ressources-1/index.html"
+from = "/espace-ressources-1/"
 to = "/ressources/"
 
 [[redirects]]
-from = "/organisations/rennes-metropole/index.html"
+from = "/organisations/rennes-metropole/"
 to = "/partenaires/rennes-metropole/"
 
 [[redirects]]
-from = "/reponses-operationnelles/amelioration-de-la-qualite-de-l-air/index.html"
+from = "/reponses-operationnelles/amelioration-de-la-qualite-de-l-air/"
 to = "/usages/amelioration-qualite-air/"
 
 [[redirects]]
-from = "/amelioration-de-la-qualite-de-l-air/index.html"
+from = "/amelioration-de-la-qualite-de-l-air/"
 to = "/usages/amelioration-qualite-air/"
 
 [[redirects]]
-from = "/partenaires/mipihsib/index.html"
+from = "/partenaires/mipihsib/"
 to = "/partenaires/numihfrance/"
 
