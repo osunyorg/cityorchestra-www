@@ -19,6 +19,10 @@ from = "/actualites/2026-04-16-comment-vulgariser-les-donnees-sur-les-chaufferie
 to = "/actualites/2026-04-16-vulgariser-les-donnees-sur-les-chaufferies-urbaines-un-defi-releve-hackathon-sante-durable/"
 
 [[redirects]]
+from = "/marilou-vuillemet/index.html"
+to = "/equipe/marilou-vuillemet/"
+
+[[redirects]]
 from = "/organisations/index.html"
 to = "/partenaires/"
 
@@ -103,10 +107,6 @@ from = "/evaluation-de-lefficacite/index.html"
 to = "/usages/amelioration-qualite-air/"
 
 [[redirects]]
-from = "/equipe/marilou-vuillemet/actualites/index.html"
-to = "/marilou-vuillemet/actualites/"
-
-[[redirects]]
 from = "/reponses-operationnelles/efficacite-energetique/index.html"
 to = "/usages/efficacite-energetique/"
 
@@ -117,10 +117,6 @@ to = "/partenaires/brest-metropole/"
 [[redirects]]
 from = "/actualites/2023-11-02-city-orchestra-laureat-tid/index.html"
 to = "/actualites/2023-06-07-city-orchestra-laureat-tid/"
-
-[[redirects]]
-from = "/equipe/marilou-vuillemet/index.html"
-to = "/marilou-vuillemet/"
 
 [[redirects]]
 from = "/agenda/2025/index.html"
@@ -173,6 +169,10 @@ to = "/partenaires/rennes-metropole/"
 [[redirects]]
 from = "/reponses-operationnelles/amelioration-de-la-qualite-de-l-air/index.html"
 to = "/usages/amelioration-qualite-air/"
+
+[[redirects]]
+from = "/marilou-vuillemet/actualites/index.html"
+to = "/equipe/marilou-vuillemet/actualites/"
 
 [[redirects]]
 from = "/amelioration-de-la-qualite-de-l-air/index.html"
