@@ -107,6 +107,10 @@ from = "/evaluation-de-lefficacite/index.html"
 to = "/usages/amelioration-qualite-air/"
 
 [[redirects]]
+from = "/fichiers/2026/index.html"
+to = "/fichiers/2026/syntheseco-2025pdf/"
+
+[[redirects]]
 from = "/reponses-operationnelles/efficacite-energetique/index.html"
 to = "/usages/efficacite-energetique/"
 
