@@ -23,6 +23,10 @@ from = "/marilou-vuillemet/index.html"
 to = "/equipe/marilou-vuillemet/"
 
 [[redirects]]
+from = "/actualites/2026-09-09-participez-a-levenement-de-cloture-du-projet-city-orchestra/index.html"
+to = "/actualites/2026-09-09-evenement-city-orchestra-2026/"
+
+[[redirects]]
 from = "/organisations/index.html"
 to = "/partenaires/"
 
